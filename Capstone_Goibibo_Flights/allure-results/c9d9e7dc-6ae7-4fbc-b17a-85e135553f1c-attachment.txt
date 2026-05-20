@@ -1,0 +1,43 @@
+[32mINFO    [0m root:test_e2e.py:28 =================================================================
+[32mINFO    [0m root:test_e2e.py:29 STARTING EXECUTION: Routing from delhi to agra
+[32mINFO    [0m root:test_e2e.py:30 =================================================================
+[32mINFO    [0m root:homepage.py:22 Navigating to https://www.goibibo.com/trains/
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-175735.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:47 Entering routing paths...
+[32mINFO    [0m root:homepage.py:29 Opening Source input view and typing: delhi
+[32mINFO    [0m root:homepage.py:49 Selecting top auto-suggest recommendation matching string query
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-175739.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+[32mINFO    [0m root:homepage.py:39 Opening Destination input view and typing: agra
+[32mINFO    [0m root:homepage.py:49 Selecting top auto-suggest recommendation matching string query
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-175742.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:56 Selecting hardcoded journey date (June 26)...
+[32mINFO    [0m root:homepage.py:57 Locating June 26 on the calendar UI using native elements...
+[1m[31mERROR   [0m root:homepage.py:80 Failed to click hardcoded June 26 natively: Message: 
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7c959e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7c959e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7c9918bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7c9313e3c]
+	msedgedriver!(No symbol) [0x7ff7c93140a5]
+	msedgedriver!(No symbol) [0x7ff7c9351357]
+	msedgedriver!(No symbol) [0x7ff7c930aaa7]
+	msedgedriver!(No symbol) [0x7ff7c934f0b2]
+	msedgedriver!(No symbol) [0x7ff7c930a2ec]
+	msedgedriver!(No symbol) [0x7ff7c9309546]
+	msedgedriver!(No symbol) [0x7ff7c930a113]
+	msedgedriver!(No symbol) [0x7ff7c93d2519]
+	msedgedriver!(No symbol) [0x7ff7c93cec93]
+	msedgedriver!(No symbol) [0x7ff7c93df182]
+	msedgedriver!GetHandleVerifier [0x7ff7c95baa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7c95c32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7c95a5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7c95a5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7c9592b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/hardcoded_date_fail_20260520-175753.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'hardcoded_date_fail' into Allure timeline tracker.

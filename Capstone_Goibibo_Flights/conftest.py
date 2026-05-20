@@ -1,9 +1,12 @@
+import os
 import pytest
+import allure
 from selenium import webdriver
 from selenium.webdriver.edge.options import Options as EdgeOptions
 
 from utils.config_reader import ConfigReader
 from utils.logger import LogGen
+from utils.screenshot import ScreenshotUtil  # Import your screenshot tool
 
 logger = LogGen.loggen()
 
@@ -11,9 +14,7 @@ logger = LogGen.loggen()
 @pytest.fixture(scope="function")
 def driver():
     browser = ConfigReader.get("browser").strip().lower()
-    base_url = ConfigReader.get("base_url").strip()  # Removed .lower() just in case URLs are case-sensitive
-
-    # 1. Read the value and convert it to lowercase
+    base_url = ConfigReader.get("base_url").strip()
     headless = ConfigReader.get("headless").strip().lower()
 
     edge_options = EdgeOptions()
@@ -22,13 +23,32 @@ def driver():
     edge_options.add_argument("--disable-extensions")
     edge_options.add_argument("--disable-infobars")
 
-    # 2. Update the condition to explicitly check for the string "true"
     if headless == "true":
         edge_options.add_argument("--headless")
 
     driver = webdriver.Edge(options=edge_options)
-    driver.get(base_url)
+
+    # Optional: Uncomment if you want the driver fixture to load the landing URL automatically
+    # driver.get(base_url)
 
     yield driver
 
     driver.quit()
+
+
+# Core Upgrade: Automatically capture screenshot inside Allure if any test case crashes
+@pytest.hookimpl(tryfirst=True, hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    """Listens to test steps and snaps a screenshot immediately on unexpected failures."""
+    outcome = yield
+    rep = outcome.get_result()
+
+    # 'call' represents the actual execution phase of the test method
+    if rep.when == "call" and rep.failed:
+        try:
+            if "driver" in item.fixturenames:
+                web_driver = item.funcargs["driver"]
+                # Use your existing utility to capture and attach the failure screen
+                ScreenshotUtil.capture_screenshot(web_driver, screenshot_name=f"CRITICAL_FAILURE_{item.name}")
+        except Exception as e:
+            logger.error(f"Failed to automatically attach failure layout anchor to Allure: {e}")

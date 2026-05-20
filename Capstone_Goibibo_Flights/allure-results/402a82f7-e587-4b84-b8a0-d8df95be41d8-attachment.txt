@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_e2e.py:28 =================================================================
+[32mINFO    [0m root:test_e2e.py:29 STARTING EXECUTION: Routing from delhi to agra
+[32mINFO    [0m root:test_e2e.py:30 =================================================================

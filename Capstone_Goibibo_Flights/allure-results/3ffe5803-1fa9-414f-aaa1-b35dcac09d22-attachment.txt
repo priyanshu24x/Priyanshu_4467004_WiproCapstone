@@ -1,0 +1,92 @@
+[32mINFO    [0m root:test_e2e.py:17 =================================================================
+[32mINFO    [0m root:test_e2e.py:18 STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+[32mINFO    [0m root:test_e2e.py:19 =================================================================
+[32mINFO    [0m root:homepage.py:23 Navigating to https://www.goibibo.com/trains/
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-154807.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:33 Entering routing paths...
+[32mINFO    [0m root:homepage.py:30 Opening Source input view and typing: delhi
+[32mINFO    [0m root:homepage.py:50 Selecting top auto-suggest recommendation matching string query
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-154812.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+[32mINFO    [0m root:homepage.py:40 Opening Destination input view and typing: agra
+[32mINFO    [0m root:homepage.py:50 Selecting top auto-suggest recommendation matching string query
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-154816.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:41 Selecting journey date (June 2026)...
+[32mINFO    [0m root:homepage.py:99 Executing fast-path calendar selection for June 26...
+[33mWARNING [0m root:homepage.py:108 Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 709)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff67652e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff67652e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff6768a8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff6762a973f]
+	msedgedriver!(No symbol) [0x7ff6762a7f01]
+	msedgedriver!(No symbol) [0x7ff6762a6026]
+	msedgedriver!(No symbol) [0x7ff6762a545d]
+	msedgedriver!(No symbol) [0x7ff67629b05d]
+	msedgedriver!(No symbol) [0x7ff6762c41ba]
+	msedgedriver!(No symbol) [0x7ff67629aaa7]
+	msedgedriver!(No symbol) [0x7ff67629a9ad]
+	msedgedriver!(No symbol) [0x7ff67629aaa7]
+	msedgedriver!(No symbol) [0x7ff6762df0b2]
+	msedgedriver!(No symbol) [0x7ff67629a2ec]
+	msedgedriver!(No symbol) [0x7ff676299546]
+	msedgedriver!(No symbol) [0x7ff67629a113]
+	msedgedriver!(No symbol) [0x7ff676362519]
+	msedgedriver!(No symbol) [0x7ff67635ec93]
+	msedgedriver!(No symbol) [0x7ff67636f182]
+	msedgedriver!GetHandleVerifier [0x7ff67654aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff6765532f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff676535724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff676535845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff676522b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/calendar_date_26_selected_20260520-154817.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'calendar_date_26_selected' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:48 Submitting query parameters -> Dispatching to Results View.
+[32mINFO    [0m root:homepage.py:145 Triggering structural train submission processing search sequence
+[32mINFO    [0m root:test_e2e.py:54 Awaiting Results Dashboard Page Anchor stability...
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/search_results_page_loaded_20260520-154820.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'search_results_page_loaded' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:58 Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+[32mINFO    [0m root:test_e2e.py:62 Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/2a_filter_applied_20260520-154822.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded '2a_filter_applied' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:64 Sidebar class filter applied successfully.
+[32mINFO    [0m root:test_e2e.py:69 LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 100
+[32mINFO    [0m root:test_e2e.py:74 Selecting 2A class seat block specifically for Train Code: 12434...
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/specific_train_2a_clicked_20260520-154823.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'specific_train_2a_clicked' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:76 Train 12434 selected! Redirecting to checkout dashboard details...
+[32mINFO    [0m root:test_e2e.py:82 Arrived at Checkout Details Form view. Attaching profile credentials...
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/irctc_id_validated_20260520-154825.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'irctc_id_validated' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:86 IRCTC Username applied.
+[32mINFO    [0m root:test_e2e.py:89 Opening Passenger Registration modal view...
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/passenger_modal_populated_20260520-154828.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'passenger_modal_populated' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:91 Passenger data fields verified and saved to checklist.
+[32mINFO    [0m root:test_e2e.py:94 Configuring contact channels and disabling default insurance flags...
+[32mINFO    [0m root:details_page.py:63 Applying transition pause for passenger layout settlement...
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/viewport_scrolling_settled_20260520-154833.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'viewport_scrolling_settled' into Allure timeline tracker.
+[32mINFO    [0m root:details_page.py:76 Selecting Cancellation Addon preferences naturally...
+[32mINFO    [0m root:details_page.py:82 Filling contact details input nodes...
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/contact_information_saved_20260520-154836.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'contact_information_saved' into Allure timeline tracker.
+[32mINFO    [0m root:details_page.py:100 Proceeding to secure checkout payment page gateway...
+[32mINFO    [0m root:test_e2e.py:107 Checkout form dispatch completed.
+[32mINFO    [0m root:test_e2e.py:112 Arrived at Final Secure Checkout Terminal Panel.
+[32mINFO    [0m root:test_e2e.py:114 Selecting 'Credit/Debit/ATM Card' checkout channel tab...
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/credit_card_tab_selected_20260520-154846.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'credit_card_tab_selected' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:118 Entering mock financial credentials for terminal field execution check...
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/payment_form_populated_20260520-154850.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'payment_form_populated' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:123 =================================================================
+[32mINFO    [0m root:test_e2e.py:124 SUCCESS: Full Booking Flow Executed and Verified Flawlessly!
+[32mINFO    [0m root:test_e2e.py:125 =================================================================

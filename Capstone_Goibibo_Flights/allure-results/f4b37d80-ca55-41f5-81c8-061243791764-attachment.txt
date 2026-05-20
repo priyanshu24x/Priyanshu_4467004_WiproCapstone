@@ -1,0 +1,44 @@
+[32mINFO    [0m root:test_e2e.py:28 =================================================================
+[32mINFO    [0m root:test_e2e.py:29 STARTING EXECUTION: Routing from delhi to agra
+[32mINFO    [0m root:test_e2e.py:30 =================================================================
+[32mINFO    [0m root:homepage.py:22 Navigating to https://www.goibibo.com/trains/
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-175225.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:47 Entering routing paths...
+[32mINFO    [0m root:homepage.py:29 Opening Source input view and typing: delhi
+[32mINFO    [0m root:homepage.py:49 Selecting top auto-suggest recommendation matching string query
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-175229.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+[32mINFO    [0m root:homepage.py:39 Opening Destination input view and typing: agra
+[32mINFO    [0m root:homepage.py:49 Selecting top auto-suggest recommendation matching string query
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-175232.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:57 Selecting journey date (June 26)...
+[32mINFO    [0m root:homepage.py:61 Targeting localized calendar date: June 26
+[32mINFO    [0m root:homepage.py:73 Generated Dynamic XPath Selector: //div[contains(@class, 'styles_month__')] [descendant::p[contains(text(), 'June')]]//p[contains(@class,'styles_dayCmp__calDate__Nc0Hp') and text()='26']
+[31m[1mERROR   [0m root:homepage.py:95 CRITICAL: Selection failure for target timeline window 'June 26': Message: 
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff75df4e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff75df4e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff75e2c8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff75dcc3e3c]
+	msedgedriver!(No symbol) [0x7ff75dcc40a5]
+	msedgedriver!(No symbol) [0x7ff75dd01357]
+	msedgedriver!(No symbol) [0x7ff75dcbaaa7]
+	msedgedriver!(No symbol) [0x7ff75dcff0b2]
+	msedgedriver!(No symbol) [0x7ff75dcba2ec]
+	msedgedriver!(No symbol) [0x7ff75dcb9546]
+	msedgedriver!(No symbol) [0x7ff75dcba113]
+	msedgedriver!(No symbol) [0x7ff75dd82519]
+	msedgedriver!(No symbol) [0x7ff75dd7ec93]
+	msedgedriver!(No symbol) [0x7ff75dd8f182]
+	msedgedriver!GetHandleVerifier [0x7ff75df6aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff75df732f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff75df55724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff75df55845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff75df42b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/select_date_fail_20260520-175244.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'select_date_fail' into Allure timeline tracker.

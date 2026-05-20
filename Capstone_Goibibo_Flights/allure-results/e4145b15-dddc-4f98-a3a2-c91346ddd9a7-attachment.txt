@@ -1,0 +1,18 @@
+[32mINFO    [0m root:test_e2e.py:28 =================================================================
+[32mINFO    [0m root:test_e2e.py:29 STARTING EXECUTION: Routing from delhi to agra
+[32mINFO    [0m root:test_e2e.py:30 =================================================================
+[32mINFO    [0m root:homepage.py:22 Navigating to https://www.goibibo.com/trains/
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-171800.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:47 Entering routing paths...
+[32mINFO    [0m root:homepage.py:29 Opening Source input view and typing: delhi
+[32mINFO    [0m root:homepage.py:49 Selecting top auto-suggest recommendation matching string query
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-171804.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+[32mINFO    [0m root:homepage.py:39 Opening Destination input view and typing: agra
+[32mINFO    [0m root:homepage.py:49 Selecting top auto-suggest recommendation matching string query
+[32mINFO    [0m root:screenshot.py:26 Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-171807.png
+[32mINFO    [0m root:screenshot.py:35 Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+[32mINFO    [0m root:test_e2e.py:57 Selecting journey date (June 26)...
+[32mINFO    [0m root:homepage.py:57 Waiting for calendar dropdown view to stabilize...
+[32mINFO    [0m root:homepage.py:67 Targeting day element via flexible route matching: June 26

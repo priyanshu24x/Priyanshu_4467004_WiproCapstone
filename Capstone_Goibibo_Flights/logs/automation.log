@@ -1,0 +1,2238 @@
+2026-05-20 03:52:45,432 - root - INFO - ==========TEST START: test_valid_search============
+2026-05-20 03:52:45,435 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 03:52:47,829 - root - INFO - Testing Train route from: delhi to agra
+2026-05-20 03:52:47,829 - root - INFO - Step 2: Enter Source City and Pick Suggestion
+2026-05-20 03:52:47,830 - root - INFO - Entering source: delhi
+2026-05-20 03:54:53,294 - root - INFO - ==========TEST START: test_valid_search============
+2026-05-20 03:54:53,296 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 03:54:56,866 - root - INFO - Testing Train route from: delhi to agra
+2026-05-20 03:54:56,866 - root - INFO - Step 2: Enter Source City and Pick Suggestion
+2026-05-20 03:54:56,896 - root - INFO - Interacting with Source field container for city: delhi
+2026-05-20 03:57:38,071 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 03:57:48,365 - root - INFO - ==========TEST START: test_valid_search============
+2026-05-20 03:57:48,365 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 03:57:50,213 - root - INFO - Testing Train route from: delhi to agra
+2026-05-20 03:57:50,213 - root - INFO - Step 2: Enter Source City and Pick Suggestion
+2026-05-20 03:57:50,213 - root - INFO - Interacting with Source field container for city: delhi
+2026-05-20 04:03:00,388 - root - INFO - ========== TEST START: test_valid_search ==========
+2026-05-20 04:03:00,422 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 04:03:02,937 - root - INFO - Testing Train route validation from: delhi to agra
+2026-05-20 04:03:02,937 - root - INFO - Step 1: Enter Source City and Pick Suggestion
+2026-05-20 04:03:02,937 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 04:03:08,763 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 04:04:00,809 - root - INFO - ========== TEST START: test_valid_search ==========
+2026-05-20 04:04:00,847 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 04:04:03,141 - root - INFO - Testing Train route validation from: delhi to agra
+2026-05-20 04:04:03,142 - root - INFO - Step 1: Enter Source City and Pick Suggestion
+2026-05-20 04:04:03,142 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 04:04:05,905 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 04:06:08,768 - root - INFO - ========== TEST START: test_valid_search ==========
+2026-05-20 04:06:08,810 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 04:06:11,206 - root - INFO - Testing Train route validation from: delhi to agra
+2026-05-20 04:06:11,207 - root - INFO - Step 1: Enter Source City and Pick Suggestion
+2026-05-20 04:06:11,207 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 04:06:16,993 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 04:06:17,614 - root - INFO - Step 2: Enter Destination City and Pick Suggestion
+2026-05-20 04:06:17,614 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 04:06:19,803 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 04:06:20,469 - root - INFO - Step 3: Select Departure Date (Using tomorrow shortcut)
+2026-05-20 04:06:20,586 - root - INFO - Selected 'Tomorrow' quick shortcut element successfully
+2026-05-20 04:06:20,586 - root - INFO - Step 4: Click Search Button
+2026-05-20 04:06:20,586 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 04:06:20,722 - root - INFO - Step 5: Verify Results Page Loaded
+2026-05-20 04:06:25,733 - root - INFO - Navigated URL Target: https://www.goibibo.com/trains/dsrp/anvt/agc/20260521/
+2026-05-20 04:06:25,733 - root - INFO - Assertion Passed: URL confirms train modules destination processing!
+2026-05-20 04:06:25,733 - root - INFO - ========== TEST END: test_valid_search ==========
+2026-05-20 05:20:36,525 - root - INFO - ========== TEST START: test_valid_search ==========
+2026-05-20 05:20:36,566 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 05:20:38,738 - root - INFO - Testing Train route validation from: delhi to agra
+2026-05-20 05:20:38,739 - root - INFO - Step 1: Enter Source City and Pick Suggestion
+2026-05-20 05:20:38,740 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 05:20:41,378 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 05:20:42,011 - root - INFO - Step 2: Enter Destination City and Pick Suggestion
+2026-05-20 05:20:42,012 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 05:20:44,167 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 05:20:44,851 - root - INFO - Step 3: Select Departure Date (Targeting 26 June 2026)
+2026-05-20 05:20:44,851 - root - INFO - Targeting calendar selection for Month: June 2026, Day: 26
+2026-05-20 05:20:45,869 - root - INFO - Found active panel container for June 2026
+2026-05-20 05:20:46,980 - root - INFO - Month 'June 2026' not yet in view. Clicking Next Month arrow option...
+2026-05-20 05:20:57,270 - root - ERROR - Failed to interact with next month pagination arrow elements: Message: 
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7a378e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7a378e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7a3b08bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7a3503e3c]
+	msedgedriver!(No symbol) [0x7ff7a35040a5]
+	msedgedriver!(No symbol) [0x7ff7a3541357]
+	msedgedriver!(No symbol) [0x7ff7a34faaa7]
+	msedgedriver!(No symbol) [0x7ff7a353f0b2]
+	msedgedriver!(No symbol) [0x7ff7a34fa2ec]
+	msedgedriver!(No symbol) [0x7ff7a34f9546]
+	msedgedriver!(No symbol) [0x7ff7a34fa113]
+	msedgedriver!(No symbol) [0x7ff7a35c2519]
+	msedgedriver!(No symbol) [0x7ff7a35bec93]
+	msedgedriver!(No symbol) [0x7ff7a35cf182]
+	msedgedriver!GetHandleVerifier [0x7ff7a37aaa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7a37b32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7a3795724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7a3795845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7a3782b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+2026-05-20 05:22:55,778 - root - INFO - ========== TEST START: test_valid_search ==========
+2026-05-20 05:22:55,815 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 05:22:58,580 - root - INFO - Testing Train route validation from: delhi to agra
+2026-05-20 05:22:58,580 - root - INFO - Step 1: Enter Source City and Pick Suggestion
+2026-05-20 05:22:58,581 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 05:23:01,028 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 05:23:01,697 - root - INFO - Step 2: Enter Destination City and Pick Suggestion
+2026-05-20 05:23:01,697 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 05:23:03,882 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 05:23:04,530 - root - INFO - Step 3: Select Departure Date (Targeting 26 June 2026)
+2026-05-20 05:23:04,530 - root - INFO - Targeting calendar selection for Month: June 2026, Day: 26
+2026-05-20 05:23:06,609 - root - ERROR - Direct selection failed: Message: element click intercepted: Element is not clickable at point (389, 733)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff65f9ae295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff65f9ae2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff65fd28bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff65f72973f]
+	msedgedriver!(No symbol) [0x7ff65f727f01]
+	msedgedriver!(No symbol) [0x7ff65f726026]
+	msedgedriver!(No symbol) [0x7ff65f72545d]
+	msedgedriver!(No symbol) [0x7ff65f71b05d]
+	msedgedriver!(No symbol) [0x7ff65f7441ba]
+	msedgedriver!(No symbol) [0x7ff65f71aaa7]
+	msedgedriver!(No symbol) [0x7ff65f71a9ad]
+	msedgedriver!(No symbol) [0x7ff65f71aaa7]
+	msedgedriver!(No symbol) [0x7ff65f75f0b2]
+	msedgedriver!(No symbol) [0x7ff65f71a2ec]
+	msedgedriver!(No symbol) [0x7ff65f719546]
+	msedgedriver!(No symbol) [0x7ff65f71a113]
+	msedgedriver!(No symbol) [0x7ff65f7e2519]
+	msedgedriver!(No symbol) [0x7ff65f7dec93]
+	msedgedriver!(No symbol) [0x7ff65f7ef182]
+	msedgedriver!GetHandleVerifier [0x7ff65f9caa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff65f9d32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff65f9b5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff65f9b5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff65f9a2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Attempting backup container click...
+2026-05-20 05:23:06,691 - root - INFO - Backup Javascript injection click handled execution step successfully
+2026-05-20 05:23:06,691 - root - INFO - Step 4: Click Search Button
+2026-05-20 05:23:06,691 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 05:23:06,809 - root - INFO - Step 5: Verify Results Page Loaded
+2026-05-20 05:23:11,816 - root - INFO - Navigated URL Target: https://www.goibibo.com/trains/dsrp/anvt/agc/20260526/
+2026-05-20 05:23:11,816 - root - INFO - Assertion Passed: URL confirms train modules destination processing!
+2026-05-20 05:23:11,816 - root - INFO - ========== TEST END: test_valid_search ==========
+2026-05-20 05:24:29,054 - root - INFO - ========== TEST START: test_valid_search ==========
+2026-05-20 05:24:29,080 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 05:24:31,651 - root - INFO - Testing Train route validation from: delhi to agra
+2026-05-20 05:24:31,652 - root - INFO - Step 1: Enter Source City and Pick Suggestion
+2026-05-20 05:24:31,652 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 05:24:34,206 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 05:24:34,963 - root - INFO - Step 2: Enter Destination City and Pick Suggestion
+2026-05-20 05:24:34,963 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 05:24:37,188 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 05:24:37,825 - root - INFO - Step 3: Select Departure Date (Targeting 26 June 2026)
+2026-05-20 05:24:37,826 - root - INFO - Targeting calendar selection for Month: June 2026, Day: 26
+2026-05-20 05:24:49,169 - root - ERROR - Scoped month search failed: Message: 
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff72bade295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff72bade2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff72be58bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff72b853e3c]
+	msedgedriver!(No symbol) [0x7ff72b8540a5]
+	msedgedriver!(No symbol) [0x7ff72b891357]
+	msedgedriver!(No symbol) [0x7ff72b84aaa7]
+	msedgedriver!(No symbol) [0x7ff72b88f0b2]
+	msedgedriver!(No symbol) [0x7ff72b84a2ec]
+	msedgedriver!(No symbol) [0x7ff72b849546]
+	msedgedriver!(No symbol) [0x7ff72b84a113]
+	msedgedriver!(No symbol) [0x7ff72b912519]
+	msedgedriver!(No symbol) [0x7ff72b90ec93]
+	msedgedriver!(No symbol) [0x7ff72b91f182]
+	msedgedriver!GetHandleVerifier [0x7ff72bafaa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff72bb032f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff72bae5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff72bae5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff72bad2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Attempting dynamic pagination fallback...
+2026-05-20 05:26:38,071 - root - INFO - ========== TEST START: test_valid_search ==========
+2026-05-20 05:26:38,102 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 05:26:39,923 - root - INFO - Testing Train route validation from: delhi to agra
+2026-05-20 05:26:39,924 - root - INFO - Step 1: Enter Source City and Pick Suggestion
+2026-05-20 05:26:39,924 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 05:26:42,547 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 05:26:43,169 - root - INFO - Step 2: Enter Destination City and Pick Suggestion
+2026-05-20 05:26:43,170 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 05:26:45,615 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 05:26:46,305 - root - INFO - Step 3: Select Departure Date (Targeting 26 June 2026)
+2026-05-20 05:26:46,305 - root - INFO - Targeting calendar view layout selection for Day: 26
+2026-05-20 05:26:48,369 - root - ERROR - Indexed layout selection failed: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff78a01e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff78a01e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff78a398bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff789d9973f]
+	msedgedriver!(No symbol) [0x7ff789d97f01]
+	msedgedriver!(No symbol) [0x7ff789d96026]
+	msedgedriver!(No symbol) [0x7ff789d9545d]
+	msedgedriver!(No symbol) [0x7ff789d8b05d]
+	msedgedriver!(No symbol) [0x7ff789db41ba]
+	msedgedriver!(No symbol) [0x7ff789d8aaa7]
+	msedgedriver!(No symbol) [0x7ff789d8a9ad]
+	msedgedriver!(No symbol) [0x7ff789d8aaa7]
+	msedgedriver!(No symbol) [0x7ff789dcf0b2]
+	msedgedriver!(No symbol) [0x7ff789d8a2ec]
+	msedgedriver!(No symbol) [0x7ff789d89546]
+	msedgedriver!(No symbol) [0x7ff789d8a113]
+	msedgedriver!(No symbol) [0x7ff789e52519]
+	msedgedriver!(No symbol) [0x7ff789e4ec93]
+	msedgedriver!(No symbol) [0x7ff789e5f182]
+	msedgedriver!GetHandleVerifier [0x7ff78a03aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff78a0432f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff78a025724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff78a025845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff78a012b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Attempting literal fallback extraction...
+2026-05-20 05:26:48,407 - root - INFO - Step 4: Click Search Button
+2026-05-20 05:26:48,407 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 05:26:48,545 - root - INFO - Step 5: Verify Results Page Loaded
+2026-05-20 05:26:53,567 - root - INFO - Navigated URL Target: https://www.goibibo.com/trains/dsrp/anvt/agc/20260626/
+2026-05-20 05:26:53,568 - root - INFO - Assertion Passed: URL confirms train modules destination processing!
+2026-05-20 05:26:53,568 - root - INFO - ========== TEST END: test_valid_search ==========
+2026-05-20 05:33:30,085 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 05:34:09,099 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 05:53:14,849 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 05:54:48,432 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 06:14:17,598 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 06:24:28,154 - root - INFO - =================================================================
+2026-05-20 06:24:28,192 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 06:24:28,192 - root - INFO - =================================================================
+2026-05-20 06:24:28,192 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 06:24:30,943 - root - INFO - Entering routing paths...
+2026-05-20 06:24:30,943 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 06:24:33,463 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 06:24:34,162 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 06:24:36,342 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 06:24:36,968 - root - INFO - Selecting journey date (June 26, 2026)...
+2026-05-20 06:24:36,968 - root - INFO - Targeting calendar view layout selection for Day: 26
+2026-05-20 06:24:39,045 - root - ERROR - Indexed layout selection failed: Message: element click intercepted: Element is not clickable at point (915, 708)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7a915e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7a915e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7a94d8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7a8ed973f]
+	msedgedriver!(No symbol) [0x7ff7a8ed7f01]
+	msedgedriver!(No symbol) [0x7ff7a8ed6026]
+	msedgedriver!(No symbol) [0x7ff7a8ed545d]
+	msedgedriver!(No symbol) [0x7ff7a8ecb05d]
+	msedgedriver!(No symbol) [0x7ff7a8ef41ba]
+	msedgedriver!(No symbol) [0x7ff7a8ecaaa7]
+	msedgedriver!(No symbol) [0x7ff7a8eca9ad]
+	msedgedriver!(No symbol) [0x7ff7a8ecaaa7]
+	msedgedriver!(No symbol) [0x7ff7a8f0f0b2]
+	msedgedriver!(No symbol) [0x7ff7a8eca2ec]
+	msedgedriver!(No symbol) [0x7ff7a8ec9546]
+	msedgedriver!(No symbol) [0x7ff7a8eca113]
+	msedgedriver!(No symbol) [0x7ff7a8f92519]
+	msedgedriver!(No symbol) [0x7ff7a8f8ec93]
+	msedgedriver!(No symbol) [0x7ff7a8f9f182]
+	msedgedriver!GetHandleVerifier [0x7ff7a917aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7a91832f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7a9165724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7a9165845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7a9152b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Attempting literal fallback extraction...
+2026-05-20 06:24:39,093 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 06:24:39,093 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 06:24:39,182 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 06:26:48,630 - root - INFO - =================================================================
+2026-05-20 06:26:48,648 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 06:26:48,648 - root - INFO - =================================================================
+2026-05-20 06:26:48,648 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 06:26:50,843 - root - INFO - Entering routing paths...
+2026-05-20 06:26:50,844 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 06:26:53,422 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 06:26:54,118 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 06:26:56,396 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 06:26:57,046 - root - INFO - Selecting journey date (June 26, 2026)...
+2026-05-20 06:26:57,046 - root - INFO - Targeting calendar view layout selection for Day: 26
+2026-05-20 06:26:59,159 - root - ERROR - Indexed layout selection failed: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7a915e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7a915e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7a94d8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7a8ed973f]
+	msedgedriver!(No symbol) [0x7ff7a8ed7f01]
+	msedgedriver!(No symbol) [0x7ff7a8ed6026]
+	msedgedriver!(No symbol) [0x7ff7a8ed545d]
+	msedgedriver!(No symbol) [0x7ff7a8ecb05d]
+	msedgedriver!(No symbol) [0x7ff7a8ef41ba]
+	msedgedriver!(No symbol) [0x7ff7a8ecaaa7]
+	msedgedriver!(No symbol) [0x7ff7a8eca9ad]
+	msedgedriver!(No symbol) [0x7ff7a8ecaaa7]
+	msedgedriver!(No symbol) [0x7ff7a8f0f0b2]
+	msedgedriver!(No symbol) [0x7ff7a8eca2ec]
+	msedgedriver!(No symbol) [0x7ff7a8ec9546]
+	msedgedriver!(No symbol) [0x7ff7a8eca113]
+	msedgedriver!(No symbol) [0x7ff7a8f92519]
+	msedgedriver!(No symbol) [0x7ff7a8f8ec93]
+	msedgedriver!(No symbol) [0x7ff7a8f9f182]
+	msedgedriver!GetHandleVerifier [0x7ff7a917aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7a91832f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7a9165724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7a9165845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7a9152b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Attempting literal fallback extraction...
+2026-05-20 06:26:59,206 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 06:26:59,206 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 06:26:59,307 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 06:37:08,823 - root - INFO - =================================================================
+2026-05-20 06:37:08,858 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 06:37:08,858 - root - INFO - =================================================================
+2026-05-20 06:37:08,858 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 06:37:11,111 - root - INFO - Entering routing paths...
+2026-05-20 06:37:11,112 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 06:37:13,686 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 06:37:14,311 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 06:37:16,472 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 06:37:17,095 - root - INFO - Selecting journey date (June 26, 2026)...
+2026-05-20 06:37:17,095 - root - INFO - Targeting calendar view layout selection for Day: 26
+2026-05-20 06:37:19,220 - root - ERROR - Indexed layout selection failed: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7715ae295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7715ae2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff771928bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff77132973f]
+	msedgedriver!(No symbol) [0x7ff771327f01]
+	msedgedriver!(No symbol) [0x7ff771326026]
+	msedgedriver!(No symbol) [0x7ff77132545d]
+	msedgedriver!(No symbol) [0x7ff77131b05d]
+	msedgedriver!(No symbol) [0x7ff7713441ba]
+	msedgedriver!(No symbol) [0x7ff77131aaa7]
+	msedgedriver!(No symbol) [0x7ff77131a9ad]
+	msedgedriver!(No symbol) [0x7ff77131aaa7]
+	msedgedriver!(No symbol) [0x7ff77135f0b2]
+	msedgedriver!(No symbol) [0x7ff77131a2ec]
+	msedgedriver!(No symbol) [0x7ff771319546]
+	msedgedriver!(No symbol) [0x7ff77131a113]
+	msedgedriver!(No symbol) [0x7ff7713e2519]
+	msedgedriver!(No symbol) [0x7ff7713dec93]
+	msedgedriver!(No symbol) [0x7ff7713ef182]
+	msedgedriver!GetHandleVerifier [0x7ff7715caa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7715d32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7715b5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7715b5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7715a2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Attempting literal fallback extraction...
+2026-05-20 06:37:19,262 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 06:37:19,262 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 06:37:19,364 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 06:37:20,690 - root - INFO - Anchor confirmed! Results dashboard rendered successfully.
+2026-05-20 06:37:20,690 - root - INFO - Selecting 2A carriage seat container block from first available card...
+2026-05-20 06:49:42,769 - root - INFO - =================================================================
+2026-05-20 06:49:42,814 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 06:49:42,814 - root - INFO - =================================================================
+2026-05-20 06:49:42,815 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 06:49:44,926 - root - INFO - Entering routing paths...
+2026-05-20 06:49:44,927 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 06:49:47,425 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 06:49:48,056 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 06:49:50,263 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 06:49:50,901 - root - INFO - Selecting journey date (June 26, 2026)...
+2026-05-20 06:49:50,902 - root - INFO - Targeting calendar view layout selection for Day: 26
+2026-05-20 06:49:53,023 - root - ERROR - Indexed layout selection failed: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff6e9a8e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff6e9a8e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff6e9e08bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff6e980973f]
+	msedgedriver!(No symbol) [0x7ff6e9807f01]
+	msedgedriver!(No symbol) [0x7ff6e9806026]
+	msedgedriver!(No symbol) [0x7ff6e980545d]
+	msedgedriver!(No symbol) [0x7ff6e97fb05d]
+	msedgedriver!(No symbol) [0x7ff6e98241ba]
+	msedgedriver!(No symbol) [0x7ff6e97faaa7]
+	msedgedriver!(No symbol) [0x7ff6e97fa9ad]
+	msedgedriver!(No symbol) [0x7ff6e97faaa7]
+	msedgedriver!(No symbol) [0x7ff6e983f0b2]
+	msedgedriver!(No symbol) [0x7ff6e97fa2ec]
+	msedgedriver!(No symbol) [0x7ff6e97f9546]
+	msedgedriver!(No symbol) [0x7ff6e97fa113]
+	msedgedriver!(No symbol) [0x7ff6e98c2519]
+	msedgedriver!(No symbol) [0x7ff6e98bec93]
+	msedgedriver!(No symbol) [0x7ff6e98cf182]
+	msedgedriver!GetHandleVerifier [0x7ff6e9aaaa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff6e9ab32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff6e9a95724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff6e9a95845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff6e9a82b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Attempting literal fallback extraction...
+2026-05-20 06:49:53,062 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 06:49:53,062 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 06:49:53,163 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 06:49:54,315 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 06:49:54,315 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 07:34:16,604 - root - INFO - =================================================================
+2026-05-20 07:34:16,649 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 07:34:16,649 - root - INFO - =================================================================
+2026-05-20 07:34:16,649 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 07:34:19,893 - root - INFO - Entering routing paths...
+2026-05-20 07:34:19,893 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 07:34:22,485 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 07:34:23,102 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 07:34:25,336 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 07:34:25,976 - root - INFO - Selecting journey date (June 26, 2026)...
+2026-05-20 07:34:25,976 - root - INFO - Targeting calendar view layout selection for Day: 26
+2026-05-20 07:34:28,053 - root - ERROR - Indexed layout selection failed: Message: element click intercepted: Element is not clickable at point (915, 708)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7703ee295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7703ee2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff770768bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff77016973f]
+	msedgedriver!(No symbol) [0x7ff770167f01]
+	msedgedriver!(No symbol) [0x7ff770166026]
+	msedgedriver!(No symbol) [0x7ff77016545d]
+	msedgedriver!(No symbol) [0x7ff77015b05d]
+	msedgedriver!(No symbol) [0x7ff7701841ba]
+	msedgedriver!(No symbol) [0x7ff77015aaa7]
+	msedgedriver!(No symbol) [0x7ff77015a9ad]
+	msedgedriver!(No symbol) [0x7ff77015aaa7]
+	msedgedriver!(No symbol) [0x7ff77019f0b2]
+	msedgedriver!(No symbol) [0x7ff77015a2ec]
+	msedgedriver!(No symbol) [0x7ff770159546]
+	msedgedriver!(No symbol) [0x7ff77015a113]
+	msedgedriver!(No symbol) [0x7ff770222519]
+	msedgedriver!(No symbol) [0x7ff77021ec93]
+	msedgedriver!(No symbol) [0x7ff77022f182]
+	msedgedriver!GetHandleVerifier [0x7ff77040aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7704132f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7703f5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7703f5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7703e2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Attempting literal fallback extraction...
+2026-05-20 07:34:28,090 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 07:34:28,090 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 07:34:28,185 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 07:34:29,570 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 07:34:29,570 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 07:46:14,480 - root - INFO - =================================================================
+2026-05-20 07:46:14,517 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 07:46:14,518 - root - INFO - =================================================================
+2026-05-20 07:46:14,518 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 07:46:16,966 - root - INFO - Entering routing paths...
+2026-05-20 07:46:16,970 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 07:46:19,576 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 07:46:20,491 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 07:46:22,743 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 07:46:23,369 - root - INFO - Selecting journey date (June 24, 2026)...
+2026-05-20 07:46:23,369 - root - INFO - Targeting calendar view layout selection for Day: 24
+2026-05-20 07:46:25,441 - root - WARNING - Standard click failed: Message: element click intercepted: Element is not clickable at point (820, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff67feae295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff67feae2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff680228bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff67fc2973f]
+	msedgedriver!(No symbol) [0x7ff67fc27f01]
+	msedgedriver!(No symbol) [0x7ff67fc26026]
+	msedgedriver!(No symbol) [0x7ff67fc2545d]
+	msedgedriver!(No symbol) [0x7ff67fc1b05d]
+	msedgedriver!(No symbol) [0x7ff67fc441ba]
+	msedgedriver!(No symbol) [0x7ff67fc1aaa7]
+	msedgedriver!(No symbol) [0x7ff67fc1a9ad]
+	msedgedriver!(No symbol) [0x7ff67fc1aaa7]
+	msedgedriver!(No symbol) [0x7ff67fc5f0b2]
+	msedgedriver!(No symbol) [0x7ff67fc1a2ec]
+	msedgedriver!(No symbol) [0x7ff67fc19546]
+	msedgedriver!(No symbol) [0x7ff67fc1a113]
+	msedgedriver!(No symbol) [0x7ff67fce2519]
+	msedgedriver!(No symbol) [0x7ff67fcdec93]
+	msedgedriver!(No symbol) [0x7ff67fcef182]
+	msedgedriver!GetHandleVerifier [0x7ff67fecaa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff67fed32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff67feb5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff67feb5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff67fea2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Attempting JS fallback...
+2026-05-20 07:46:25,491 - root - INFO - JS Fallback click successful!
+2026-05-20 07:46:26,492 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 07:46:26,492 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 07:46:26,615 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 07:46:27,827 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260624/
+2026-05-20 07:46:27,827 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 07:46:30,102 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 07:46:30,139 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 107
+2026-05-20 07:46:30,139 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 07:46:30,232 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 07:46:30,232 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 07:46:31,063 - root - INFO - IRCTC Username applied.
+2026-05-20 07:46:31,063 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 07:57:22,754 - root - INFO - =================================================================
+2026-05-20 07:57:22,791 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 07:57:22,791 - root - INFO - =================================================================
+2026-05-20 07:57:22,791 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 07:57:25,375 - root - INFO - Entering routing paths...
+2026-05-20 07:57:25,375 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 07:57:28,128 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 07:57:28,751 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 07:57:30,928 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 07:57:31,720 - root - INFO - Selecting journey date (June 24, 2026)...
+2026-05-20 07:57:31,720 - root - INFO - Analyzing calendar layout for pre-selected active date...
+2026-05-20 07:57:36,545 - root - WARNING - Could not read active date class styling (Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: MicrosoftEdge=148.0.3967.70)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff62a01e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff62a01e2f4+e154]
+	msedgedriver!(No symbol) [0x7ff629d4ac4e]
+	msedgedriver!(No symbol) [0x7ff629d3d6c8]
+	msedgedriver!(No symbol) [0x7ff629d3c7c5]
+	msedgedriver!(No symbol) [0x7ff629d57de3]
+	msedgedriver!(No symbol) [0x7ff629db8a71]
+	msedgedriver!(No symbol) [0x7ff629dce9bf]
+	msedgedriver!(No symbol) [0x7ff629d8a2ec]
+	msedgedriver!(No symbol) [0x7ff629d89546]
+	msedgedriver!(No symbol) [0x7ff629d8a113]
+	msedgedriver!(No symbol) [0x7ff629e52519]
+	msedgedriver!(No symbol) [0x7ff629e4ec93]
+	msedgedriver!(No symbol) [0x7ff629e5f182]
+	msedgedriver!GetHandleVerifier [0x7ff62a03aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff62a0432f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff62a025724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff62a025845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff62a012b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+). Defaulting to fallback date 26.
+2026-05-20 07:57:36,550 - root - INFO - Default is Wednesday (24). Dynamic target set to Friday (26).
+2026-05-20 07:57:36,756 - root - WARNING - Standard fallback click failed on day 26. Firing JS click override...
+2026-05-20 08:05:12,367 - root - INFO - =================================================================
+2026-05-20 08:05:12,421 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 08:05:12,421 - root - INFO - =================================================================
+2026-05-20 08:05:12,422 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 08:05:15,323 - root - INFO - Entering routing paths...
+2026-05-20 08:05:15,323 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 08:05:18,326 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:05:19,185 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 08:05:21,453 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:05:22,161 - root - INFO - Selecting journey date (June 24, 2026)...
+2026-05-20 08:05:22,161 - root - INFO - Initiating future-proof navigation for Target: June 2026, Day: 26
+2026-05-20 08:05:22,402 - root - INFO - Currently visible months on layout grid: []
+2026-05-20 08:05:22,402 - root - INFO - Target month 'June 2026' not visible. Clicking right arrow button...
+2026-05-20 08:05:23,546 - root - INFO - Currently visible months on layout grid: []
+2026-05-20 08:05:23,547 - root - INFO - Target month 'June 2026' not visible. Clicking right arrow button...
+2026-05-20 08:05:24,678 - root - INFO - Currently visible months on layout grid: []
+2026-05-20 08:05:24,678 - root - INFO - Target month 'June 2026' not visible. Clicking right arrow button...
+2026-05-20 08:07:59,489 - root - INFO - =================================================================
+2026-05-20 08:07:59,537 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 08:07:59,537 - root - INFO - =================================================================
+2026-05-20 08:07:59,537 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 08:08:02,622 - root - INFO - Entering routing paths...
+2026-05-20 08:08:02,622 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 08:08:05,330 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:08:05,948 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 08:08:08,264 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:08:08,883 - root - INFO - Selecting journey date (June 24, 2026)...
+2026-05-20 08:08:08,883 - root - INFO - Analyzing side-by-side calendar grid for pre-selected active date...
+2026-05-20 08:08:19,183 - root - WARNING - No active selection markers detected within immediate viewport context.
+2026-05-20 08:08:19,183 - root - INFO - Current active date () is outside target matrix. Safeguard triggered: Targeting June 26.
+2026-05-20 08:08:19,279 - root - INFO - Successfully finalized date selection to Day: 26
+2026-05-20 08:08:20,280 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 08:08:20,280 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 08:08:20,392 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 08:08:22,009 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 08:08:22,009 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 08:08:24,244 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 08:08:24,288 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 08:08:24,288 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 08:08:24,395 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 08:08:24,395 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 08:08:26,657 - root - INFO - IRCTC Username applied.
+2026-05-20 08:08:26,658 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 08:08:30,172 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 08:08:30,172 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 08:09:05,161 - root - INFO - =================================================================
+2026-05-20 08:09:05,202 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 08:09:05,202 - root - INFO - =================================================================
+2026-05-20 08:09:05,202 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 08:09:07,090 - root - INFO - Entering routing paths...
+2026-05-20 08:09:07,091 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 08:09:09,736 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:09:10,694 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 08:09:12,908 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:09:13,662 - root - INFO - Selecting journey date (June 24, 2026)...
+2026-05-20 08:09:13,662 - root - INFO - Analyzing side-by-side calendar grid for pre-selected active date...
+2026-05-20 08:09:23,961 - root - WARNING - No active selection markers detected within immediate viewport context.
+2026-05-20 08:09:23,961 - root - INFO - Current active date () is outside target matrix. Safeguard triggered: Targeting June 26.
+2026-05-20 08:09:25,084 - root - WARNING - Standard click blocked: Message: element click intercepted: Element is not clickable at point (915, 708)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff752f5e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff752f5e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7532d8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff752cd973f]
+	msedgedriver!(No symbol) [0x7ff752cd7f01]
+	msedgedriver!(No symbol) [0x7ff752cd6026]
+	msedgedriver!(No symbol) [0x7ff752cd545d]
+	msedgedriver!(No symbol) [0x7ff752ccb05d]
+	msedgedriver!(No symbol) [0x7ff752cf41ba]
+	msedgedriver!(No symbol) [0x7ff752ccaaa7]
+	msedgedriver!(No symbol) [0x7ff752cca9ad]
+	msedgedriver!(No symbol) [0x7ff752ccaaa7]
+	msedgedriver!(No symbol) [0x7ff752d0f0b2]
+	msedgedriver!(No symbol) [0x7ff752cca2ec]
+	msedgedriver!(No symbol) [0x7ff752cc9546]
+	msedgedriver!(No symbol) [0x7ff752cca113]
+	msedgedriver!(No symbol) [0x7ff752d92519]
+	msedgedriver!(No symbol) [0x7ff752d8ec93]
+	msedgedriver!(No symbol) [0x7ff752d9f182]
+	msedgedriver!GetHandleVerifier [0x7ff752f7aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff752f832f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff752f65724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff752f65845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff752f52b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS execution override.
+2026-05-20 08:09:26,119 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 08:09:26,119 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 08:09:26,224 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 08:09:27,302 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 08:09:27,302 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 08:09:29,937 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 08:09:29,972 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 08:09:29,972 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 08:09:30,135 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 08:09:30,135 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 08:09:32,097 - root - INFO - IRCTC Username applied.
+2026-05-20 08:09:32,097 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 08:09:36,163 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 08:09:36,164 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 08:20:30,319 - root - INFO - =================================================================
+2026-05-20 08:20:30,352 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 08:20:30,352 - root - INFO - =================================================================
+2026-05-20 08:20:30,354 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 08:20:33,031 - root - INFO - Entering routing paths...
+2026-05-20 08:20:33,031 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 08:20:35,812 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:20:36,500 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 08:20:38,880 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:20:39,566 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 08:20:39,567 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 08:20:40,867 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 708)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7e291e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7e291e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7e2c98bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7e269973f]
+	msedgedriver!(No symbol) [0x7ff7e2697f01]
+	msedgedriver!(No symbol) [0x7ff7e2696026]
+	msedgedriver!(No symbol) [0x7ff7e269545d]
+	msedgedriver!(No symbol) [0x7ff7e268b05d]
+	msedgedriver!(No symbol) [0x7ff7e26b41ba]
+	msedgedriver!(No symbol) [0x7ff7e268aaa7]
+	msedgedriver!(No symbol) [0x7ff7e268a9ad]
+	msedgedriver!(No symbol) [0x7ff7e268aaa7]
+	msedgedriver!(No symbol) [0x7ff7e26cf0b2]
+	msedgedriver!(No symbol) [0x7ff7e268a2ec]
+	msedgedriver!(No symbol) [0x7ff7e2689546]
+	msedgedriver!(No symbol) [0x7ff7e268a113]
+	msedgedriver!(No symbol) [0x7ff7e2752519]
+	msedgedriver!(No symbol) [0x7ff7e274ec93]
+	msedgedriver!(No symbol) [0x7ff7e275f182]
+	msedgedriver!GetHandleVerifier [0x7ff7e293aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7e29432f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7e2925724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7e2925845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7e2912b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 08:20:41,413 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 08:20:41,414 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 08:20:41,537 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 08:20:42,986 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 08:20:42,986 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 08:20:45,519 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 08:20:45,570 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 08:20:45,571 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 08:20:45,691 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 08:20:45,691 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 08:20:48,017 - root - INFO - IRCTC Username applied.
+2026-05-20 08:20:48,017 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 08:20:51,487 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 08:20:51,488 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 08:20:52,989 - root - INFO - Selecting Cancellation Addon preferences...
+2026-05-20 08:20:54,058 - root - WARNING - Addon click intercepted by screen layout overlay: Message: element click intercepted: Element is not clickable at point (373, 806)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7e291e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7e291e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7e2c98bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7e269973f]
+	msedgedriver!(No symbol) [0x7ff7e2697f01]
+	msedgedriver!(No symbol) [0x7ff7e2696026]
+	msedgedriver!(No symbol) [0x7ff7e269545d]
+	msedgedriver!(No symbol) [0x7ff7e268b05d]
+	msedgedriver!(No symbol) [0x7ff7e26b41ba]
+	msedgedriver!(No symbol) [0x7ff7e268aaa7]
+	msedgedriver!(No symbol) [0x7ff7e268a9ad]
+	msedgedriver!(No symbol) [0x7ff7e268aaa7]
+	msedgedriver!(No symbol) [0x7ff7e26cf0b2]
+	msedgedriver!(No symbol) [0x7ff7e268a2ec]
+	msedgedriver!(No symbol) [0x7ff7e2689546]
+	msedgedriver!(No symbol) [0x7ff7e268a113]
+	msedgedriver!(No symbol) [0x7ff7e2752519]
+	msedgedriver!(No symbol) [0x7ff7e274ec93]
+	msedgedriver!(No symbol) [0x7ff7e275f182]
+	msedgedriver!GetHandleVerifier [0x7ff7e293aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7e29432f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7e2925724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7e2925845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7e2912b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS click fallback...
+2026-05-20 08:20:55,571 - root - INFO - Proceeding to secure checkout payment page gateway...
+2026-05-20 08:25:07,995 - root - INFO - =================================================================
+2026-05-20 08:25:08,032 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 08:25:08,032 - root - INFO - =================================================================
+2026-05-20 08:25:08,033 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 08:25:11,027 - root - INFO - Entering routing paths...
+2026-05-20 08:25:11,028 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 08:25:13,637 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:25:14,666 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 08:25:16,941 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:25:17,710 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 08:25:17,711 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 08:25:18,787 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7e7f4e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7e7f4e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7e82c8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7e7cc973f]
+	msedgedriver!(No symbol) [0x7ff7e7cc7f01]
+	msedgedriver!(No symbol) [0x7ff7e7cc6026]
+	msedgedriver!(No symbol) [0x7ff7e7cc545d]
+	msedgedriver!(No symbol) [0x7ff7e7cbb05d]
+	msedgedriver!(No symbol) [0x7ff7e7ce41ba]
+	msedgedriver!(No symbol) [0x7ff7e7cbaaa7]
+	msedgedriver!(No symbol) [0x7ff7e7cba9ad]
+	msedgedriver!(No symbol) [0x7ff7e7cbaaa7]
+	msedgedriver!(No symbol) [0x7ff7e7cff0b2]
+	msedgedriver!(No symbol) [0x7ff7e7cba2ec]
+	msedgedriver!(No symbol) [0x7ff7e7cb9546]
+	msedgedriver!(No symbol) [0x7ff7e7cba113]
+	msedgedriver!(No symbol) [0x7ff7e7d82519]
+	msedgedriver!(No symbol) [0x7ff7e7d7ec93]
+	msedgedriver!(No symbol) [0x7ff7e7d8f182]
+	msedgedriver!GetHandleVerifier [0x7ff7e7f6aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7e7f732f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7e7f55724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7e7f55845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7e7f42b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 08:25:19,316 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 08:25:19,317 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 08:25:19,427 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 08:25:20,791 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 08:25:20,791 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 08:25:23,105 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 08:25:23,193 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 08:25:23,193 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 08:25:23,297 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 08:25:23,297 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 08:25:25,072 - root - INFO - IRCTC Username applied.
+2026-05-20 08:25:25,072 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 08:25:28,537 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 08:25:28,537 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 08:25:28,538 - root - INFO - Awaiting passenger registration modal overlay to fade out completely...
+2026-05-20 08:25:28,556 - root - INFO - Selecting Cancellation Addon preferences naturally...
+2026-05-20 08:29:45,032 - root - INFO - =================================================================
+2026-05-20 08:29:45,072 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 08:29:45,072 - root - INFO - =================================================================
+2026-05-20 08:29:45,072 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 08:29:48,077 - root - INFO - Entering routing paths...
+2026-05-20 08:29:48,079 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 08:29:50,825 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:29:51,581 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 08:29:53,728 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:29:54,560 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 08:29:54,560 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 08:29:55,641 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 708)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7870ee295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7870ee2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff787468bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff786e6973f]
+	msedgedriver!(No symbol) [0x7ff786e67f01]
+	msedgedriver!(No symbol) [0x7ff786e66026]
+	msedgedriver!(No symbol) [0x7ff786e6545d]
+	msedgedriver!(No symbol) [0x7ff786e5b05d]
+	msedgedriver!(No symbol) [0x7ff786e841ba]
+	msedgedriver!(No symbol) [0x7ff786e5aaa7]
+	msedgedriver!(No symbol) [0x7ff786e5a9ad]
+	msedgedriver!(No symbol) [0x7ff786e5aaa7]
+	msedgedriver!(No symbol) [0x7ff786e9f0b2]
+	msedgedriver!(No symbol) [0x7ff786e5a2ec]
+	msedgedriver!(No symbol) [0x7ff786e59546]
+	msedgedriver!(No symbol) [0x7ff786e5a113]
+	msedgedriver!(No symbol) [0x7ff786f22519]
+	msedgedriver!(No symbol) [0x7ff786f1ec93]
+	msedgedriver!(No symbol) [0x7ff786f2f182]
+	msedgedriver!GetHandleVerifier [0x7ff78710aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7871132f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7870f5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7870f5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7870e2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 08:29:56,174 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 08:29:56,174 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 08:29:56,336 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 08:29:58,448 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 08:29:58,448 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 08:30:00,650 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 08:30:00,685 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 08:30:00,685 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 08:30:00,810 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 08:30:00,810 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 08:30:04,629 - root - INFO - IRCTC Username applied.
+2026-05-20 08:30:04,629 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 08:30:09,624 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 08:30:09,624 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 08:30:09,625 - root - INFO - Applying short transition pause for passenger layout settlement...
+2026-05-20 08:30:12,625 - root - INFO - Selecting Cancellation Addon preferences naturally...
+2026-05-20 08:30:13,077 - root - INFO - Proceeding to secure checkout payment page gateway...
+2026-05-20 08:30:13,184 - root - INFO - Checkout form dispatch completed.
+2026-05-20 08:30:13,184 - root - INFO - Arrived at Final Secure Checkout Terminal Panel.
+2026-05-20 08:30:13,185 - root - INFO - Selecting 'Credit/Debit/ATM Card' checkout channel tab...
+2026-05-20 08:34:04,187 - root - INFO - =================================================================
+2026-05-20 08:34:04,214 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 08:34:04,214 - root - INFO - =================================================================
+2026-05-20 08:34:04,214 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 08:34:07,080 - root - INFO - Entering routing paths...
+2026-05-20 08:34:07,080 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 08:34:09,980 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:34:11,654 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 08:34:13,786 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 08:34:14,420 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 08:34:14,421 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 08:34:15,485 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 708)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7abade295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7abade2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7abe58bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7ab85973f]
+	msedgedriver!(No symbol) [0x7ff7ab857f01]
+	msedgedriver!(No symbol) [0x7ff7ab856026]
+	msedgedriver!(No symbol) [0x7ff7ab85545d]
+	msedgedriver!(No symbol) [0x7ff7ab84b05d]
+	msedgedriver!(No symbol) [0x7ff7ab8741ba]
+	msedgedriver!(No symbol) [0x7ff7ab84aaa7]
+	msedgedriver!(No symbol) [0x7ff7ab84a9ad]
+	msedgedriver!(No symbol) [0x7ff7ab84aaa7]
+	msedgedriver!(No symbol) [0x7ff7ab88f0b2]
+	msedgedriver!(No symbol) [0x7ff7ab84a2ec]
+	msedgedriver!(No symbol) [0x7ff7ab849546]
+	msedgedriver!(No symbol) [0x7ff7ab84a113]
+	msedgedriver!(No symbol) [0x7ff7ab912519]
+	msedgedriver!(No symbol) [0x7ff7ab90ec93]
+	msedgedriver!(No symbol) [0x7ff7ab91f182]
+	msedgedriver!GetHandleVerifier [0x7ff7abafaa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7abb032f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7abae5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7abae5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7abad2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 08:34:16,025 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 08:34:16,025 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 08:34:16,133 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 08:34:17,213 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 08:34:17,213 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 08:34:19,959 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 08:34:19,986 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 08:34:19,986 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 08:34:20,089 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 08:34:20,090 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 08:34:22,426 - root - INFO - IRCTC Username applied.
+2026-05-20 08:34:22,426 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 08:34:25,891 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 08:34:25,892 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 08:34:25,892 - root - INFO - Applying transition pause for passenger layout settlement...
+2026-05-20 08:34:29,893 - root - INFO - Selecting Cancellation Addon preferences naturally...
+2026-05-20 08:34:30,980 - root - INFO - Filling contact details input nodes...
+2026-05-20 08:34:32,782 - root - INFO - Proceeding to secure checkout payment page gateway...
+2026-05-20 08:34:32,894 - root - INFO - Checkout form dispatch completed.
+2026-05-20 08:34:32,895 - root - INFO - Arrived at Final Secure Checkout Terminal Panel.
+2026-05-20 08:34:32,895 - root - INFO - Selecting 'Credit/Debit/ATM Card' checkout channel tab...
+2026-05-20 08:34:39,580 - root - INFO - Entering mock financial credentials for terminal field execution check...
+2026-05-20 08:34:45,157 - root - INFO - =================================================================
+2026-05-20 08:34:45,158 - root - INFO - SUCCESS: Full Booking Flow Executed and Verified Flawlessly!
+2026-05-20 08:34:45,158 - root - INFO - =================================================================
+2026-05-20 10:32:43,468 - root - INFO - =================================================================
+2026-05-20 10:32:43,512 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 10:32:43,513 - root - INFO - =================================================================
+2026-05-20 10:32:43,514 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 10:32:46,961 - root - INFO - Entering routing paths...
+2026-05-20 10:32:46,961 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 10:32:50,515 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 10:32:51,154 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 10:32:53,294 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 10:32:53,923 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 10:32:53,924 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 10:32:55,037 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff65fade295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff65fade2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff65fe58bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff65f85973f]
+	msedgedriver!(No symbol) [0x7ff65f857f01]
+	msedgedriver!(No symbol) [0x7ff65f856026]
+	msedgedriver!(No symbol) [0x7ff65f85545d]
+	msedgedriver!(No symbol) [0x7ff65f84b05d]
+	msedgedriver!(No symbol) [0x7ff65f8741ba]
+	msedgedriver!(No symbol) [0x7ff65f84aaa7]
+	msedgedriver!(No symbol) [0x7ff65f84a9ad]
+	msedgedriver!(No symbol) [0x7ff65f84aaa7]
+	msedgedriver!(No symbol) [0x7ff65f88f0b2]
+	msedgedriver!(No symbol) [0x7ff65f84a2ec]
+	msedgedriver!(No symbol) [0x7ff65f849546]
+	msedgedriver!(No symbol) [0x7ff65f84a113]
+	msedgedriver!(No symbol) [0x7ff65f912519]
+	msedgedriver!(No symbol) [0x7ff65f90ec93]
+	msedgedriver!(No symbol) [0x7ff65f91f182]
+	msedgedriver!GetHandleVerifier [0x7ff65fafaa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff65fb032f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff65fae5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff65fae5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff65fad2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 10:32:55,589 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 10:32:55,589 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 10:32:55,731 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 10:32:56,330 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 10:32:56,330 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 10:32:58,525 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 10:32:58,557 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 10:32:58,557 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 10:32:58,687 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 10:32:58,687 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 10:33:00,437 - root - INFO - IRCTC Username applied.
+2026-05-20 10:33:00,437 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 10:33:03,911 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 10:33:03,912 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 10:33:03,912 - root - INFO - Applying transition pause for passenger layout settlement...
+2026-05-20 10:33:07,913 - root - INFO - Selecting Cancellation Addon preferences naturally...
+2026-05-20 10:33:27,682 - root - INFO - =================================================================
+2026-05-20 10:33:27,682 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 10:33:27,682 - root - INFO - =================================================================
+2026-05-20 10:33:27,683 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 10:33:29,775 - root - INFO - Entering routing paths...
+2026-05-20 10:33:29,775 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 10:33:32,179 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 10:33:32,792 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 10:33:34,993 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 10:33:35,618 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 10:33:35,618 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 10:33:36,686 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff65fade295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff65fade2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff65fe58bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff65f85973f]
+	msedgedriver!(No symbol) [0x7ff65f857f01]
+	msedgedriver!(No symbol) [0x7ff65f856026]
+	msedgedriver!(No symbol) [0x7ff65f85545d]
+	msedgedriver!(No symbol) [0x7ff65f84b05d]
+	msedgedriver!(No symbol) [0x7ff65f8741ba]
+	msedgedriver!(No symbol) [0x7ff65f84aaa7]
+	msedgedriver!(No symbol) [0x7ff65f84a9ad]
+	msedgedriver!(No symbol) [0x7ff65f84aaa7]
+	msedgedriver!(No symbol) [0x7ff65f88f0b2]
+	msedgedriver!(No symbol) [0x7ff65f84a2ec]
+	msedgedriver!(No symbol) [0x7ff65f849546]
+	msedgedriver!(No symbol) [0x7ff65f84a113]
+	msedgedriver!(No symbol) [0x7ff65f912519]
+	msedgedriver!(No symbol) [0x7ff65f90ec93]
+	msedgedriver!(No symbol) [0x7ff65f91f182]
+	msedgedriver!GetHandleVerifier [0x7ff65fafaa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff65fb032f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff65fae5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff65fae5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff65fad2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 10:33:37,252 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 10:33:37,252 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 10:33:37,349 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 10:33:37,974 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 10:33:37,975 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 10:33:40,125 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 10:33:40,163 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 10:33:40,164 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 10:33:40,267 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 10:33:40,267 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 10:33:42,045 - root - INFO - IRCTC Username applied.
+2026-05-20 10:33:42,045 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 10:33:45,579 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 10:33:45,579 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 10:33:45,579 - root - INFO - Applying transition pause for passenger layout settlement...
+2026-05-20 10:33:49,581 - root - INFO - Selecting Cancellation Addon preferences naturally...
+2026-05-20 10:33:50,670 - root - INFO - Filling contact details input nodes...
+2026-05-20 10:33:52,468 - root - INFO - Proceeding to secure checkout payment page gateway...
+2026-05-20 10:33:52,564 - root - INFO - Checkout form dispatch completed.
+2026-05-20 10:33:52,565 - root - INFO - Arrived at Final Secure Checkout Terminal Panel.
+2026-05-20 10:33:52,565 - root - INFO - Selecting 'Credit/Debit/ATM Card' checkout channel tab...
+2026-05-20 10:33:59,190 - root - INFO - Entering mock financial credentials for terminal field execution check...
+2026-05-20 10:34:04,969 - root - INFO - =================================================================
+2026-05-20 10:34:04,969 - root - INFO - SUCCESS: Full Booking Flow Executed and Verified Flawlessly!
+2026-05-20 10:34:04,969 - root - INFO - =================================================================
+2026-05-20 13:29:18,171 - root - INFO - =================================================================
+2026-05-20 13:29:18,188 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 13:29:18,188 - root - INFO - =================================================================
+2026-05-20 13:29:18,189 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 13:29:25,978 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-132925.png
+2026-05-20 13:29:25,978 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 13:29:25,978 - root - INFO - Entering routing paths...
+2026-05-20 13:29:25,978 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 13:29:26,788 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 13:29:27,056 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-132926.png
+2026-05-20 13:29:27,056 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 13:29:27,057 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 13:29:27,704 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 13:29:28,016 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-132927.png
+2026-05-20 13:29:28,016 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 13:29:28,016 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 13:29:28,030 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 13:29:29,111 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff6f017e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff6f017e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff6f04f8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff6efef973f]
+	msedgedriver!(No symbol) [0x7ff6efef7f01]
+	msedgedriver!(No symbol) [0x7ff6efef6026]
+	msedgedriver!(No symbol) [0x7ff6efef545d]
+	msedgedriver!(No symbol) [0x7ff6efeeb05d]
+	msedgedriver!(No symbol) [0x7ff6eff141ba]
+	msedgedriver!(No symbol) [0x7ff6efeeaaa7]
+	msedgedriver!(No symbol) [0x7ff6efeea9ad]
+	msedgedriver!(No symbol) [0x7ff6efeeaaa7]
+	msedgedriver!(No symbol) [0x7ff6eff2f0b2]
+	msedgedriver!(No symbol) [0x7ff6efeea2ec]
+	msedgedriver!(No symbol) [0x7ff6efee9546]
+	msedgedriver!(No symbol) [0x7ff6efeea113]
+	msedgedriver!(No symbol) [0x7ff6effb2519]
+	msedgedriver!(No symbol) [0x7ff6effaec93]
+	msedgedriver!(No symbol) [0x7ff6effbf182]
+	msedgedriver!GetHandleVerifier [0x7ff6f019aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff6f01a32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff6f0172b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 13:29:29,315 - root - INFO - Screenshot saved to reports/screenshots/calendar_date_26_selected_20260520-132929.png
+2026-05-20 13:29:29,315 - root - INFO - Successfully embedded 'calendar_date_26_selected' into Allure timeline tracker.
+2026-05-20 13:29:29,316 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 13:29:29,316 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 13:29:29,421 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 13:29:30,558 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/NDLS/CDG/20260626/
+2026-05-20 13:29:30,559 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 13:29:31,720 - root - WARNING - Click intercepted for locator ('xpath', "//label[contains(text(), '2A')]"). Attempting scroll-alignment recovery...
+2026-05-20 13:29:31,743 - root - INFO - Scrolled viewport layout to target element: ('xpath', "//label[contains(text(), '2A')]")
+2026-05-20 13:29:34,015 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 13:29:48,541 - root - ERROR - Failed to get text from locator ('xpath', "//p[text()='12434']/ancestor::div[contains(@class, 'TrainCard_trnCrd')]//p[text()='2A']/ancestor::li[contains(@class, 'seatsLstItm')]//div[contains(@class, 'avlCnt')]/p[contains(@class, 'font14')]"): Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: MicrosoftEdge=148.0.3967.70)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff6f017e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff6f017e2f4+e154]
+	msedgedriver!(No symbol) [0x7ff6efeaac4e]
+	msedgedriver!(No symbol) [0x7ff6efe9d6c8]
+	msedgedriver!(No symbol) [0x7ff6efe9c7c5]
+	msedgedriver!(No symbol) [0x7ff6efeb7de3]
+	msedgedriver!(No symbol) [0x7ff6eff18a71]
+	msedgedriver!(No symbol) [0x7ff6eff2e9bf]
+	msedgedriver!(No symbol) [0x7ff6efeea2ec]
+	msedgedriver!(No symbol) [0x7ff6efee9546]
+	msedgedriver!(No symbol) [0x7ff6efeea113]
+	msedgedriver!(No symbol) [0x7ff6effb2519]
+	msedgedriver!(No symbol) [0x7ff6effaec93]
+	msedgedriver!(No symbol) [0x7ff6effbf182]
+	msedgedriver!GetHandleVerifier [0x7ff6f019aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff6f01a32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff6f0172b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+2026-05-20 13:29:48,541 - root - WARNING - Could not extract live availability text metrics: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: MicrosoftEdge=148.0.3967.70)
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff6f017e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff6f017e2f4+e154]
+	msedgedriver!(No symbol) [0x7ff6efeaac4e]
+	msedgedriver!(No symbol) [0x7ff6efe9d6c8]
+	msedgedriver!(No symbol) [0x7ff6efe9c7c5]
+	msedgedriver!(No symbol) [0x7ff6efeb7de3]
+	msedgedriver!(No symbol) [0x7ff6eff18a71]
+	msedgedriver!(No symbol) [0x7ff6eff2e9bf]
+	msedgedriver!(No symbol) [0x7ff6efeea2ec]
+	msedgedriver!(No symbol) [0x7ff6efee9546]
+	msedgedriver!(No symbol) [0x7ff6efeea113]
+	msedgedriver!(No symbol) [0x7ff6effb2519]
+	msedgedriver!(No symbol) [0x7ff6effaec93]
+	msedgedriver!(No symbol) [0x7ff6effbf182]
+	msedgedriver!GetHandleVerifier [0x7ff6f019aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff6f01a32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff6f0172b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+2026-05-20 13:29:48,541 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 13:29:49,272 - root - ERROR - Failed to automatically attach failure layout anchor to Allure: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff6f017e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff6f017e2f4+e154]
+	msedgedriver!(No symbol) [0x7ff6efeaac4e]
+	msedgedriver!(No symbol) [0x7ff6efee8d05]
+	msedgedriver!(No symbol) [0x7ff6eff14022]
+	msedgedriver!(No symbol) [0x7ff6efea2767]
+	msedgedriver!(No symbol) [0x7ff6eff106ae]
+	msedgedriver!(No symbol) [0x7ff6eff0ff3c]
+	msedgedriver!(No symbol) [0x7ff6efe82ea5]
+	msedgedriver!(No symbol) [0x7ff6effb2519]
+	msedgedriver!(No symbol) [0x7ff6effaec93]
+	msedgedriver!(No symbol) [0x7ff6effbf182]
+	msedgedriver!GetHandleVerifier [0x7ff6f019aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff6f01a32f6+33156]
+	msedgedriver!(No symbol) [0x7ff6efe8183c]
+	msedgedriver!GetHandleVerifier [0x7ff6f0304368+1941c8]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+2026-05-20 13:30:54,877 - root - INFO - =================================================================
+2026-05-20 13:30:54,880 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 13:30:54,881 - root - INFO - =================================================================
+2026-05-20 13:30:54,882 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 13:30:58,214 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-133057.png
+2026-05-20 13:30:58,214 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 13:30:58,214 - root - INFO - Entering routing paths...
+2026-05-20 13:30:58,215 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 13:30:58,960 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 13:30:59,181 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-133059.png
+2026-05-20 13:30:59,181 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 13:30:59,182 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 13:31:00,172 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 13:31:00,742 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-133100.png
+2026-05-20 13:31:00,743 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 13:31:00,743 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 13:31:00,743 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 13:31:01,884 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 708)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff6f017e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff6f017e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff6f04f8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff6efef973f]
+	msedgedriver!(No symbol) [0x7ff6efef7f01]
+	msedgedriver!(No symbol) [0x7ff6efef6026]
+	msedgedriver!(No symbol) [0x7ff6efef545d]
+	msedgedriver!(No symbol) [0x7ff6efeeb05d]
+	msedgedriver!(No symbol) [0x7ff6eff141ba]
+	msedgedriver!(No symbol) [0x7ff6efeeaaa7]
+	msedgedriver!(No symbol) [0x7ff6efeea9ad]
+	msedgedriver!(No symbol) [0x7ff6efeeaaa7]
+	msedgedriver!(No symbol) [0x7ff6eff2f0b2]
+	msedgedriver!(No symbol) [0x7ff6efeea2ec]
+	msedgedriver!(No symbol) [0x7ff6efee9546]
+	msedgedriver!(No symbol) [0x7ff6efeea113]
+	msedgedriver!(No symbol) [0x7ff6effb2519]
+	msedgedriver!(No symbol) [0x7ff6effaec93]
+	msedgedriver!(No symbol) [0x7ff6effbf182]
+	msedgedriver!GetHandleVerifier [0x7ff6f019aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff6f01a32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff6f0172b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 13:31:02,049 - root - INFO - Screenshot saved to reports/screenshots/calendar_date_26_selected_20260520-133101.png
+2026-05-20 13:31:02,049 - root - INFO - Successfully embedded 'calendar_date_26_selected' into Allure timeline tracker.
+2026-05-20 13:31:02,049 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 13:31:02,050 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 13:31:02,170 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 13:31:03,381 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/NDLS/ANVT/20260626/
+2026-05-20 13:31:03,382 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 13:31:05,763 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 13:31:20,764 - root - ERROR - Timeout waiting for element with locator: ('xpath', "//p[text()='12434']/ancestor::div[contains(@class, 'TrainCard_trnCrd')]//p[text()='2A']/ancestor::li[contains(@class, 'seatsLstItm')]//div[contains(@class, 'avlCnt')]/p[contains(@class, 'font14')]")
+2026-05-20 13:31:20,765 - root - ERROR - Failed to get text from locator ('xpath', "//p[text()='12434']/ancestor::div[contains(@class, 'TrainCard_trnCrd')]//p[text()='2A']/ancestor::li[contains(@class, 'seatsLstItm')]//div[contains(@class, 'avlCnt')]/p[contains(@class, 'font14')]"): Message: 
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff6f017e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff6f017e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff6f04f8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff6efef3e3c]
+	msedgedriver!(No symbol) [0x7ff6efef40a5]
+	msedgedriver!(No symbol) [0x7ff6eff31357]
+	msedgedriver!(No symbol) [0x7ff6efeeaaa7]
+	msedgedriver!(No symbol) [0x7ff6eff2f0b2]
+	msedgedriver!(No symbol) [0x7ff6efeea2ec]
+	msedgedriver!(No symbol) [0x7ff6efee9546]
+	msedgedriver!(No symbol) [0x7ff6efeea113]
+	msedgedriver!(No symbol) [0x7ff6effb2519]
+	msedgedriver!(No symbol) [0x7ff6effaec93]
+	msedgedriver!(No symbol) [0x7ff6effbf182]
+	msedgedriver!GetHandleVerifier [0x7ff6f019aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff6f01a32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff6f0172b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+2026-05-20 13:31:20,765 - root - WARNING - Could not extract live availability text metrics: Message: 
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff6f017e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff6f017e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff6f04f8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff6efef3e3c]
+	msedgedriver!(No symbol) [0x7ff6efef40a5]
+	msedgedriver!(No symbol) [0x7ff6eff31357]
+	msedgedriver!(No symbol) [0x7ff6efeeaaa7]
+	msedgedriver!(No symbol) [0x7ff6eff2f0b2]
+	msedgedriver!(No symbol) [0x7ff6efeea2ec]
+	msedgedriver!(No symbol) [0x7ff6efee9546]
+	msedgedriver!(No symbol) [0x7ff6efeea113]
+	msedgedriver!(No symbol) [0x7ff6effb2519]
+	msedgedriver!(No symbol) [0x7ff6effaec93]
+	msedgedriver!(No symbol) [0x7ff6effbf182]
+	msedgedriver!GetHandleVerifier [0x7ff6f019aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff6f01a32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff6f0185845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff6f0172b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+2026-05-20 13:31:20,765 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 13:31:36,272 - root - ERROR - Timeout waiting for element with locator: ('xpath', "//p[text()='12434']/ancestor::div[contains(@class, 'TrainCard_trnCrd')]//p[text()='2A']/ancestor::li[contains(@class, 'seatsLstItm')]")
+2026-05-20 13:31:37,006 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow_20260520-133136.png
+2026-05-20 13:31:37,006 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow' into Allure timeline tracker.
+2026-05-20 14:46:35,662 - root - INFO - =================================================================
+2026-05-20 14:46:35,706 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 14:46:35,706 - root - INFO - =================================================================
+2026-05-20 14:46:35,711 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 14:46:39,164 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-144638.png
+2026-05-20 14:46:39,164 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 14:46:39,164 - root - INFO - Entering routing paths...
+2026-05-20 14:46:39,164 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 14:46:40,186 - root - INFO - Synchronizing auto-suggest list for expected query: delhi
+2026-05-20 14:46:40,706 - root - WARNING - Dynamic match for 'delhi' timed out (Message: stale element reference: stale element not found in the current frame
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#staleelementreferenceexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff76380e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff76380e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff763b88bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff763540d93]
+	msedgedriver!(No symbol) [0x7ff7635431d5]
+	msedgedriver!(No symbol) [0x7ff76354329f]
+	msedgedriver!(No symbol) [0x7ff763584c04]
+	msedgedriver!(No symbol) [0x7ff7635869c9]
+	msedgedriver!(No symbol) [0x7ff76358507b]
+	msedgedriver!(No symbol) [0x7ff76357b4e8]
+	msedgedriver!(No symbol) [0x7ff7635a41ba]
+	msedgedriver!(No symbol) [0x7ff76357aaa7]
+	msedgedriver!(No symbol) [0x7ff76357a9ad]
+	msedgedriver!(No symbol) [0x7ff76357aaa7]
+	msedgedriver!(No symbol) [0x7ff7635bf0b2]
+	msedgedriver!(No symbol) [0x7ff76357a2ec]
+	msedgedriver!(No symbol) [0x7ff763579546]
+	msedgedriver!(No symbol) [0x7ff76357a113]
+	msedgedriver!(No symbol) [0x7ff763642519]
+	msedgedriver!(No symbol) [0x7ff76363ec93]
+	msedgedriver!(No symbol) [0x7ff76364f182]
+	msedgedriver!GetHandleVerifier [0x7ff76382aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7638332f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff763815724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff763815845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff763802b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+). Falling back to first available option.
+2026-05-20 14:46:41,194 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_for_delhi_selected_20260520-144641.png
+2026-05-20 14:46:41,195 - root - INFO - Successfully embedded 'auto_suggestion_for_delhi_selected' into Allure timeline tracker.
+2026-05-20 14:46:42,364 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow_20260520-144642.png
+2026-05-20 14:46:42,364 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow' into Allure timeline tracker.
+2026-05-20 14:53:43,717 - root - INFO - =================================================================
+2026-05-20 14:53:43,729 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 14:53:43,730 - root - INFO - =================================================================
+2026-05-20 14:53:43,731 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 14:53:47,019 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-145346.png
+2026-05-20 14:53:47,019 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 14:53:47,020 - root - INFO - Entering routing paths...
+2026-05-20 14:53:47,020 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 14:53:47,794 - root - INFO - Synchronizing auto-suggest list for expected query: delhi
+2026-05-20 14:53:47,917 - root - INFO - Successfully matched and selected auto-suggest for: delhi
+2026-05-20 14:53:48,070 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_for_delhi_selected_20260520-145347.png
+2026-05-20 14:53:48,070 - root - INFO - Successfully embedded 'auto_suggestion_for_delhi_selected' into Allure timeline tracker.
+2026-05-20 14:53:48,071 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 14:53:48,762 - root - INFO - Synchronizing auto-suggest list for expected query: agra
+2026-05-20 14:53:49,895 - root - INFO - Successfully matched and selected auto-suggest for: agra
+2026-05-20 14:53:50,056 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_for_agra_selected_20260520-145349.png
+2026-05-20 14:53:50,057 - root - INFO - Successfully embedded 'auto_suggestion_for_agra_selected' into Allure timeline tracker.
+2026-05-20 14:53:50,057 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 14:53:50,057 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 14:53:50,199 - root - INFO - Successfully selected June 26
+2026-05-20 14:53:50,311 - root - INFO - Screenshot saved to reports/screenshots/calendar_date_26_selected_20260520-145350.png
+2026-05-20 14:53:50,311 - root - INFO - Successfully embedded 'calendar_date_26_selected' into Allure timeline tracker.
+2026-05-20 14:53:50,312 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 14:53:50,312 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 14:53:50,406 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 14:53:51,167 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/NDLS/AGC/20260626/
+2026-05-20 14:53:51,167 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 14:53:54,356 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 14:53:54,407 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 14:53:54,407 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 14:53:55,537 - root - WARNING - Click intercepted for locator ('xpath', "//p[text()='12434']/ancestor::div[contains(@class, 'TrainCard_trnCrd')]//p[text()='2A']/ancestor::li[contains(@class, 'seatsLstItm')]"). Attempting scroll-alignment recovery...
+2026-05-20 14:53:55,550 - root - INFO - Scrolled viewport layout to target element: ('xpath', "//p[text()='12434']/ancestor::div[contains(@class, 'TrainCard_trnCrd')]//p[text()='2A']/ancestor::li[contains(@class, 'seatsLstItm')]")
+2026-05-20 14:53:57,304 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow_20260520-145357.png
+2026-05-20 14:53:57,305 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow' into Allure timeline tracker.
+2026-05-20 15:01:30,159 - root - INFO - =================================================================
+2026-05-20 15:01:30,193 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 15:01:30,193 - root - INFO - =================================================================
+2026-05-20 15:01:30,194 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 15:01:33,363 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-150133.png
+2026-05-20 15:01:33,363 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 15:01:33,363 - root - INFO - Entering routing paths...
+2026-05-20 15:01:33,363 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 15:01:35,656 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:01:36,487 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-150136.png
+2026-05-20 15:01:36,488 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:01:36,488 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 15:01:38,663 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:01:39,425 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-150139.png
+2026-05-20 15:01:39,425 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:01:39,425 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 15:01:39,426 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 15:01:40,531 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 690)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff63fe5e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff63fe5e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff6401d8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff63fbd973f]
+	msedgedriver!(No symbol) [0x7ff63fbd7f01]
+	msedgedriver!(No symbol) [0x7ff63fbd6026]
+	msedgedriver!(No symbol) [0x7ff63fbd545d]
+	msedgedriver!(No symbol) [0x7ff63fbcb05d]
+	msedgedriver!(No symbol) [0x7ff63fbf41ba]
+	msedgedriver!(No symbol) [0x7ff63fbcaaa7]
+	msedgedriver!(No symbol) [0x7ff63fbca9ad]
+	msedgedriver!(No symbol) [0x7ff63fbcaaa7]
+	msedgedriver!(No symbol) [0x7ff63fc0f0b2]
+	msedgedriver!(No symbol) [0x7ff63fbca2ec]
+	msedgedriver!(No symbol) [0x7ff63fbc9546]
+	msedgedriver!(No symbol) [0x7ff63fbca113]
+	msedgedriver!(No symbol) [0x7ff63fc92519]
+	msedgedriver!(No symbol) [0x7ff63fc8ec93]
+	msedgedriver!(No symbol) [0x7ff63fc9f182]
+	msedgedriver!GetHandleVerifier [0x7ff63fe7aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff63fe832f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff63fe65724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff63fe65845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff63fe52b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 15:01:41,201 - root - INFO - Screenshot saved to reports/screenshots/calendar_date_26_selected_20260520-150141.png
+2026-05-20 15:01:41,201 - root - INFO - Successfully embedded 'calendar_date_26_selected' into Allure timeline tracker.
+2026-05-20 15:01:41,201 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 15:01:41,201 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 15:01:41,298 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 15:01:41,904 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 15:01:41,904 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 15:01:42,587 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow_20260520-150142.png
+2026-05-20 15:01:42,588 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow' into Allure timeline tracker.
+2026-05-20 15:02:33,431 - root - INFO - =================================================================
+2026-05-20 15:02:33,464 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 15:02:33,464 - root - INFO - =================================================================
+2026-05-20 15:02:33,465 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 15:02:36,276 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-150235.png
+2026-05-20 15:02:36,277 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 15:02:36,277 - root - INFO - Entering routing paths...
+2026-05-20 15:02:36,278 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 15:02:38,541 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:02:39,443 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-150239.png
+2026-05-20 15:02:39,443 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:02:39,444 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 15:02:41,635 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:02:42,380 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-150242.png
+2026-05-20 15:02:42,380 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:02:42,380 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 15:02:42,380 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 15:02:43,457 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff62df5e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff62df5e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff62e2d8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff62dcd973f]
+	msedgedriver!(No symbol) [0x7ff62dcd7f01]
+	msedgedriver!(No symbol) [0x7ff62dcd6026]
+	msedgedriver!(No symbol) [0x7ff62dcd545d]
+	msedgedriver!(No symbol) [0x7ff62dccb05d]
+	msedgedriver!(No symbol) [0x7ff62dcf41ba]
+	msedgedriver!(No symbol) [0x7ff62dccaaa7]
+	msedgedriver!(No symbol) [0x7ff62dcca9ad]
+	msedgedriver!(No symbol) [0x7ff62dccaaa7]
+	msedgedriver!(No symbol) [0x7ff62dd0f0b2]
+	msedgedriver!(No symbol) [0x7ff62dcca2ec]
+	msedgedriver!(No symbol) [0x7ff62dcc9546]
+	msedgedriver!(No symbol) [0x7ff62dcca113]
+	msedgedriver!(No symbol) [0x7ff62dd92519]
+	msedgedriver!(No symbol) [0x7ff62dd8ec93]
+	msedgedriver!(No symbol) [0x7ff62dd9f182]
+	msedgedriver!GetHandleVerifier [0x7ff62df7aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff62df832f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff62df65724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff62df65845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff62df52b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 15:02:44,098 - root - INFO - Screenshot saved to reports/screenshots/calendar_date_26_selected_20260520-150243.png
+2026-05-20 15:02:44,098 - root - INFO - Successfully embedded 'calendar_date_26_selected' into Allure timeline tracker.
+2026-05-20 15:02:44,098 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 15:02:44,098 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 15:02:44,206 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 15:02:45,546 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 15:02:45,546 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 15:02:47,828 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 15:02:47,893 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 15:02:47,893 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 15:02:47,981 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 15:02:47,981 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 15:02:50,259 - root - INFO - IRCTC Username applied.
+2026-05-20 15:02:50,259 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 15:02:53,731 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 15:02:53,732 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 15:02:53,732 - root - INFO - Applying transition pause for passenger layout settlement...
+2026-05-20 15:02:58,291 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow_20260520-150258.png
+2026-05-20 15:02:58,291 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow' into Allure timeline tracker.
+2026-05-20 15:09:53,684 - root - INFO - =================================================================
+2026-05-20 15:09:53,727 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 15:09:53,727 - root - INFO - =================================================================
+2026-05-20 15:09:53,727 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 15:09:57,215 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-150956.png
+2026-05-20 15:09:57,216 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 15:09:57,216 - root - INFO - Entering routing paths...
+2026-05-20 15:09:57,216 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 15:09:59,683 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:10:00,559 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-151000.png
+2026-05-20 15:10:00,559 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:10:00,559 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 15:10:02,716 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:10:03,535 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-151003.png
+2026-05-20 15:10:03,536 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:10:03,536 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 15:10:03,536 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 15:10:04,645 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff621d4e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff621d4e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff6220c8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff621ac973f]
+	msedgedriver!(No symbol) [0x7ff621ac7f01]
+	msedgedriver!(No symbol) [0x7ff621ac6026]
+	msedgedriver!(No symbol) [0x7ff621ac545d]
+	msedgedriver!(No symbol) [0x7ff621abb05d]
+	msedgedriver!(No symbol) [0x7ff621ae41ba]
+	msedgedriver!(No symbol) [0x7ff621abaaa7]
+	msedgedriver!(No symbol) [0x7ff621aba9ad]
+	msedgedriver!(No symbol) [0x7ff621abaaa7]
+	msedgedriver!(No symbol) [0x7ff621aff0b2]
+	msedgedriver!(No symbol) [0x7ff621aba2ec]
+	msedgedriver!(No symbol) [0x7ff621ab9546]
+	msedgedriver!(No symbol) [0x7ff621aba113]
+	msedgedriver!(No symbol) [0x7ff621b82519]
+	msedgedriver!(No symbol) [0x7ff621b7ec93]
+	msedgedriver!(No symbol) [0x7ff621b8f182]
+	msedgedriver!GetHandleVerifier [0x7ff621d6aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff621d732f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff621d55724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff621d55845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff621d42b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 15:10:05,332 - root - INFO - Screenshot saved to reports/screenshots/calendar_date_26_selected_20260520-151005.png
+2026-05-20 15:10:05,332 - root - INFO - Successfully embedded 'calendar_date_26_selected' into Allure timeline tracker.
+2026-05-20 15:10:05,332 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 15:10:05,333 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 15:10:05,439 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 15:10:06,842 - root - INFO - Screenshot saved to reports/screenshots/search_results_page_loaded_20260520-151006.png
+2026-05-20 15:10:06,842 - root - INFO - Successfully embedded 'search_results_page_loaded' into Allure timeline tracker.
+2026-05-20 15:10:06,846 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 15:10:06,846 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 15:10:09,251 - root - INFO - Screenshot saved to reports/screenshots/2a_filter_applied_20260520-151009.png
+2026-05-20 15:10:09,252 - root - INFO - Successfully embedded '2a_filter_applied' into Allure timeline tracker.
+2026-05-20 15:10:09,252 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 15:10:09,492 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 15:10:09,492 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 15:10:09,843 - root - INFO - Screenshot saved to reports/screenshots/specific_train_2a_clicked_20260520-151009.png
+2026-05-20 15:10:09,844 - root - INFO - Successfully embedded 'specific_train_2a_clicked' into Allure timeline tracker.
+2026-05-20 15:10:09,844 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 15:10:09,844 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 15:10:11,699 - root - INFO - Screenshot saved to reports/screenshots/irctc_id_validated_20260520-151011.png
+2026-05-20 15:10:11,700 - root - INFO - Successfully embedded 'irctc_id_validated' into Allure timeline tracker.
+2026-05-20 15:10:11,700 - root - INFO - IRCTC Username applied.
+2026-05-20 15:10:11,700 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 15:10:13,705 - root - INFO - Screenshot saved to reports/screenshots/passenger_modal_populated_20260520-151013.png
+2026-05-20 15:10:13,706 - root - INFO - Successfully embedded 'passenger_modal_populated' into Allure timeline tracker.
+2026-05-20 15:10:15,335 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 15:10:15,335 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 15:10:15,336 - root - INFO - Applying transition pause for passenger layout settlement...
+2026-05-20 15:10:19,370 - root - INFO - Selecting Cancellation Addon preferences naturally...
+2026-05-20 15:10:21,058 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow_20260520-151020.png
+2026-05-20 15:10:21,058 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow' into Allure timeline tracker.
+2026-05-20 15:13:46,136 - root - INFO - =================================================================
+2026-05-20 15:13:46,153 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 15:13:46,153 - root - INFO - =================================================================
+2026-05-20 15:13:46,155 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 15:13:49,098 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-151348.png
+2026-05-20 15:13:49,098 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 15:13:49,098 - root - INFO - Entering routing paths...
+2026-05-20 15:13:49,099 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 15:13:51,344 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:13:52,266 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-151352.png
+2026-05-20 15:13:52,266 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:13:52,267 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 15:13:54,475 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:13:55,244 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-151355.png
+2026-05-20 15:13:55,245 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:13:55,245 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 15:13:55,246 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 15:13:56,313 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 708)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7129be295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7129be2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff712d38bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff71273973f]
+	msedgedriver!(No symbol) [0x7ff712737f01]
+	msedgedriver!(No symbol) [0x7ff712736026]
+	msedgedriver!(No symbol) [0x7ff71273545d]
+	msedgedriver!(No symbol) [0x7ff71272b05d]
+	msedgedriver!(No symbol) [0x7ff7127541ba]
+	msedgedriver!(No symbol) [0x7ff71272aaa7]
+	msedgedriver!(No symbol) [0x7ff71272a9ad]
+	msedgedriver!(No symbol) [0x7ff71272aaa7]
+	msedgedriver!(No symbol) [0x7ff71276f0b2]
+	msedgedriver!(No symbol) [0x7ff71272a2ec]
+	msedgedriver!(No symbol) [0x7ff712729546]
+	msedgedriver!(No symbol) [0x7ff71272a113]
+	msedgedriver!(No symbol) [0x7ff7127f2519]
+	msedgedriver!(No symbol) [0x7ff7127eec93]
+	msedgedriver!(No symbol) [0x7ff7127ff182]
+	msedgedriver!GetHandleVerifier [0x7ff7129daa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7129e32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7129c5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7129c5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7129b2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 15:13:56,998 - root - INFO - Screenshot saved to reports/screenshots/calendar_date_26_selected_20260520-151356.png
+2026-05-20 15:13:56,998 - root - INFO - Successfully embedded 'calendar_date_26_selected' into Allure timeline tracker.
+2026-05-20 15:13:56,998 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 15:13:56,998 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 15:13:57,092 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 15:13:57,854 - root - INFO - Screenshot saved to reports/screenshots/search_results_page_loaded_20260520-151357.png
+2026-05-20 15:13:57,855 - root - INFO - Successfully embedded 'search_results_page_loaded' into Allure timeline tracker.
+2026-05-20 15:13:57,860 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 15:13:57,860 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 15:14:00,591 - root - INFO - Screenshot saved to reports/screenshots/2a_filter_applied_20260520-151400.png
+2026-05-20 15:14:00,591 - root - INFO - Successfully embedded '2a_filter_applied' into Allure timeline tracker.
+2026-05-20 15:14:00,591 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 15:14:00,619 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 101
+2026-05-20 15:14:00,620 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 15:14:00,893 - root - INFO - Screenshot saved to reports/screenshots/specific_train_2a_clicked_20260520-151400.png
+2026-05-20 15:14:00,894 - root - INFO - Successfully embedded 'specific_train_2a_clicked' into Allure timeline tracker.
+2026-05-20 15:14:00,894 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 15:14:00,894 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 15:14:02,763 - root - INFO - Screenshot saved to reports/screenshots/irctc_id_validated_20260520-151402.png
+2026-05-20 15:14:02,763 - root - INFO - Successfully embedded 'irctc_id_validated' into Allure timeline tracker.
+2026-05-20 15:14:02,763 - root - INFO - IRCTC Username applied.
+2026-05-20 15:14:02,763 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 15:14:04,745 - root - INFO - Screenshot saved to reports/screenshots/passenger_modal_populated_20260520-151404.png
+2026-05-20 15:14:04,745 - root - INFO - Successfully embedded 'passenger_modal_populated' into Allure timeline tracker.
+2026-05-20 15:14:06,341 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 15:14:06,342 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 15:14:06,342 - root - INFO - Applying transition pause for passenger layout settlement...
+2026-05-20 15:14:10,372 - root - INFO - Selecting Cancellation Addon preferences naturally...
+2026-05-20 15:14:11,407 - root - INFO - Filling contact details input nodes...
+2026-05-20 15:14:11,883 - root - INFO - Screenshot saved to reports/screenshots/contact_information_saved_20260520-151411.png
+2026-05-20 15:14:11,883 - root - INFO - Successfully embedded 'contact_information_saved' into Allure timeline tracker.
+2026-05-20 15:14:13,384 - root - INFO - Proceeding to secure checkout payment page gateway...
+2026-05-20 15:14:13,489 - root - INFO - Checkout form dispatch completed.
+2026-05-20 15:14:13,489 - root - INFO - Arrived at Final Secure Checkout Terminal Panel.
+2026-05-20 15:14:13,489 - root - INFO - Selecting 'Credit/Debit/ATM Card' checkout channel tab...
+2026-05-20 15:14:19,414 - root - INFO - Screenshot saved to reports/screenshots/credit_card_tab_selected_20260520-151419.png
+2026-05-20 15:14:19,414 - root - INFO - Successfully embedded 'credit_card_tab_selected' into Allure timeline tracker.
+2026-05-20 15:14:20,415 - root - INFO - Entering mock financial credentials for terminal field execution check...
+2026-05-20 15:14:22,316 - root - INFO - Screenshot saved to reports/screenshots/payment_form_populated_20260520-151422.png
+2026-05-20 15:14:22,316 - root - INFO - Successfully embedded 'payment_form_populated' into Allure timeline tracker.
+2026-05-20 15:14:26,317 - root - INFO - =================================================================
+2026-05-20 15:14:26,318 - root - INFO - SUCCESS: Full Booking Flow Executed and Verified Flawlessly!
+2026-05-20 15:14:26,318 - root - INFO - =================================================================
+2026-05-20 15:24:48,129 - root - INFO - =================================================================
+2026-05-20 15:24:48,161 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 15:24:48,162 - root - INFO - =================================================================
+2026-05-20 15:24:48,162 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 15:24:51,574 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-152450.png
+2026-05-20 15:24:51,578 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 15:24:51,579 - root - INFO - Entering routing paths...
+2026-05-20 15:24:51,579 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 15:24:53,995 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:24:54,726 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-152454.png
+2026-05-20 15:24:54,727 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:24:54,728 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 15:24:56,865 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:24:57,607 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-152457.png
+2026-05-20 15:24:57,608 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:24:57,609 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 15:24:57,609 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 15:24:58,728 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 711)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7f49ae295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7f49ae2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7f4d28bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7f472973f]
+	msedgedriver!(No symbol) [0x7ff7f4727f01]
+	msedgedriver!(No symbol) [0x7ff7f4726026]
+	msedgedriver!(No symbol) [0x7ff7f472545d]
+	msedgedriver!(No symbol) [0x7ff7f471b05d]
+	msedgedriver!(No symbol) [0x7ff7f47441ba]
+	msedgedriver!(No symbol) [0x7ff7f471aaa7]
+	msedgedriver!(No symbol) [0x7ff7f471a9ad]
+	msedgedriver!(No symbol) [0x7ff7f471aaa7]
+	msedgedriver!(No symbol) [0x7ff7f475f0b2]
+	msedgedriver!(No symbol) [0x7ff7f471a2ec]
+	msedgedriver!(No symbol) [0x7ff7f4719546]
+	msedgedriver!(No symbol) [0x7ff7f471a113]
+	msedgedriver!(No symbol) [0x7ff7f47e2519]
+	msedgedriver!(No symbol) [0x7ff7f47dec93]
+	msedgedriver!(No symbol) [0x7ff7f47ef182]
+	msedgedriver!GetHandleVerifier [0x7ff7f49caa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7f49d32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7f49b5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7f49b5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7f49a2b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 15:24:59,414 - root - INFO - Screenshot saved to reports/screenshots/calendar_date_26_selected_20260520-152459.png
+2026-05-20 15:24:59,432 - root - INFO - Successfully embedded 'calendar_date_26_selected' into Allure timeline tracker.
+2026-05-20 15:24:59,432 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 15:24:59,432 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 15:24:59,541 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 15:25:00,964 - root - INFO - Screenshot saved to reports/screenshots/search_results_page_loaded_20260520-152500.png
+2026-05-20 15:25:00,966 - root - INFO - Successfully embedded 'search_results_page_loaded' into Allure timeline tracker.
+2026-05-20 15:25:00,970 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 15:25:00,970 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 15:25:03,387 - root - INFO - Screenshot saved to reports/screenshots/2a_filter_applied_20260520-152503.png
+2026-05-20 15:25:03,389 - root - INFO - Successfully embedded '2a_filter_applied' into Allure timeline tracker.
+2026-05-20 15:25:03,389 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 15:25:03,420 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 100
+2026-05-20 15:25:03,420 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 15:25:03,695 - root - INFO - Screenshot saved to reports/screenshots/specific_train_2a_clicked_20260520-152503.png
+2026-05-20 15:25:03,696 - root - INFO - Successfully embedded 'specific_train_2a_clicked' into Allure timeline tracker.
+2026-05-20 15:25:03,697 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 15:25:03,697 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 15:25:05,558 - root - INFO - Screenshot saved to reports/screenshots/irctc_id_validated_20260520-152505.png
+2026-05-20 15:25:05,560 - root - INFO - Successfully embedded 'irctc_id_validated' into Allure timeline tracker.
+2026-05-20 15:25:05,560 - root - INFO - IRCTC Username applied.
+2026-05-20 15:25:05,560 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 15:25:07,606 - root - INFO - Screenshot saved to reports/screenshots/passenger_modal_populated_20260520-152507.png
+2026-05-20 15:25:07,608 - root - INFO - Successfully embedded 'passenger_modal_populated' into Allure timeline tracker.
+2026-05-20 15:25:09,194 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 15:25:09,195 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 15:25:09,195 - root - INFO - Applying transition pause for passenger layout settlement...
+2026-05-20 15:25:14,327 - root - INFO - Screenshot saved to reports/screenshots/viewport_scrolling_settled_20260520-152514.png
+2026-05-20 15:25:14,328 - root - INFO - Successfully embedded 'viewport_scrolling_settled' into Allure timeline tracker.
+2026-05-20 15:25:15,329 - root - INFO - Selecting Cancellation Addon preferences naturally...
+2026-05-20 15:25:16,369 - root - INFO - Filling contact details input nodes...
+2026-05-20 15:25:16,824 - root - INFO - Screenshot saved to reports/screenshots/contact_information_saved_20260520-152516.png
+2026-05-20 15:25:16,826 - root - INFO - Successfully embedded 'contact_information_saved' into Allure timeline tracker.
+2026-05-20 15:25:18,327 - root - INFO - Proceeding to secure checkout payment page gateway...
+2026-05-20 15:25:18,464 - root - INFO - Checkout form dispatch completed.
+2026-05-20 15:25:18,464 - root - INFO - Arrived at Final Secure Checkout Terminal Panel.
+2026-05-20 15:25:18,464 - root - INFO - Selecting 'Credit/Debit/ATM Card' checkout channel tab...
+2026-05-20 15:25:24,204 - root - INFO - Screenshot saved to reports/screenshots/credit_card_tab_selected_20260520-152524.png
+2026-05-20 15:25:24,207 - root - INFO - Successfully embedded 'credit_card_tab_selected' into Allure timeline tracker.
+2026-05-20 15:25:25,207 - root - INFO - Entering mock financial credentials for terminal field execution check...
+2026-05-20 15:25:27,212 - root - INFO - Screenshot saved to reports/screenshots/payment_form_populated_20260520-152527.png
+2026-05-20 15:25:27,213 - root - INFO - Successfully embedded 'payment_form_populated' into Allure timeline tracker.
+2026-05-20 15:25:31,214 - root - INFO - =================================================================
+2026-05-20 15:25:31,214 - root - INFO - SUCCESS: Full Booking Flow Executed and Verified Flawlessly!
+2026-05-20 15:25:31,214 - root - INFO - =================================================================
+2026-05-20 15:48:03,599 - root - INFO - =================================================================
+2026-05-20 15:48:03,640 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 15:48:03,641 - root - INFO - =================================================================
+2026-05-20 15:48:03,641 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 15:48:09,397 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-154807.png
+2026-05-20 15:48:09,425 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 15:48:09,426 - root - INFO - Entering routing paths...
+2026-05-20 15:48:09,427 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 15:48:11,911 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:48:12,871 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-154812.png
+2026-05-20 15:48:12,887 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:48:12,889 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 15:48:15,263 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 15:48:16,246 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-154816.png
+2026-05-20 15:48:16,250 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 15:48:16,250 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 15:48:16,251 - root - INFO - Executing fast-path calendar selection for June 26...
+2026-05-20 15:48:17,388 - root - WARNING - Standard click blocked on day 26: Message: element click intercepted: Element is not clickable at point (915, 709)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff67652e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff67652e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff6768a8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff6762a973f]
+	msedgedriver!(No symbol) [0x7ff6762a7f01]
+	msedgedriver!(No symbol) [0x7ff6762a6026]
+	msedgedriver!(No symbol) [0x7ff6762a545d]
+	msedgedriver!(No symbol) [0x7ff67629b05d]
+	msedgedriver!(No symbol) [0x7ff6762c41ba]
+	msedgedriver!(No symbol) [0x7ff67629aaa7]
+	msedgedriver!(No symbol) [0x7ff67629a9ad]
+	msedgedriver!(No symbol) [0x7ff67629aaa7]
+	msedgedriver!(No symbol) [0x7ff6762df0b2]
+	msedgedriver!(No symbol) [0x7ff67629a2ec]
+	msedgedriver!(No symbol) [0x7ff676299546]
+	msedgedriver!(No symbol) [0x7ff67629a113]
+	msedgedriver!(No symbol) [0x7ff676362519]
+	msedgedriver!(No symbol) [0x7ff67635ec93]
+	msedgedriver!(No symbol) [0x7ff67636f182]
+	msedgedriver!GetHandleVerifier [0x7ff67654aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff6765532f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff676535724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff676535845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff676522b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Firing JS override.
+2026-05-20 15:48:18,133 - root - INFO - Screenshot saved to reports/screenshots/calendar_date_26_selected_20260520-154817.png
+2026-05-20 15:48:18,136 - root - INFO - Successfully embedded 'calendar_date_26_selected' into Allure timeline tracker.
+2026-05-20 15:48:18,136 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 15:48:18,137 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 15:48:18,410 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 15:48:20,374 - root - INFO - Screenshot saved to reports/screenshots/search_results_page_loaded_20260520-154820.png
+2026-05-20 15:48:20,380 - root - INFO - Successfully embedded 'search_results_page_loaded' into Allure timeline tracker.
+2026-05-20 15:48:20,422 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 15:48:20,423 - root - INFO - Applying left sidebar filter: '2A - AC 2 Tier Sleeper'...
+2026-05-20 15:48:23,189 - root - INFO - Screenshot saved to reports/screenshots/2a_filter_applied_20260520-154822.png
+2026-05-20 15:48:23,242 - root - INFO - Successfully embedded '2a_filter_applied' into Allure timeline tracker.
+2026-05-20 15:48:23,242 - root - INFO - Sidebar class filter applied successfully.
+2026-05-20 15:48:23,319 - root - INFO - LIVE AVAILABILITY CAPTURED [Train 12434 - 2A]: AVL 100
+2026-05-20 15:48:23,320 - root - INFO - Selecting 2A class seat block specifically for Train Code: 12434...
+2026-05-20 15:48:23,761 - root - INFO - Screenshot saved to reports/screenshots/specific_train_2a_clicked_20260520-154823.png
+2026-05-20 15:48:23,765 - root - INFO - Successfully embedded 'specific_train_2a_clicked' into Allure timeline tracker.
+2026-05-20 15:48:23,766 - root - INFO - Train 12434 selected! Redirecting to checkout dashboard details...
+2026-05-20 15:48:23,766 - root - INFO - Arrived at Checkout Details Form view. Attaching profile credentials...
+2026-05-20 15:48:26,021 - root - INFO - Screenshot saved to reports/screenshots/irctc_id_validated_20260520-154825.png
+2026-05-20 15:48:26,024 - root - INFO - Successfully embedded 'irctc_id_validated' into Allure timeline tracker.
+2026-05-20 15:48:26,025 - root - INFO - IRCTC Username applied.
+2026-05-20 15:48:26,025 - root - INFO - Opening Passenger Registration modal view...
+2026-05-20 15:48:28,561 - root - INFO - Screenshot saved to reports/screenshots/passenger_modal_populated_20260520-154828.png
+2026-05-20 15:48:28,603 - root - INFO - Successfully embedded 'passenger_modal_populated' into Allure timeline tracker.
+2026-05-20 15:48:30,295 - root - INFO - Passenger data fields verified and saved to checklist.
+2026-05-20 15:48:30,295 - root - INFO - Configuring contact channels and disabling default insurance flags...
+2026-05-20 15:48:30,296 - root - INFO - Applying transition pause for passenger layout settlement...
+2026-05-20 15:48:34,050 - root - INFO - Screenshot saved to reports/screenshots/viewport_scrolling_settled_20260520-154833.png
+2026-05-20 15:48:34,054 - root - INFO - Successfully embedded 'viewport_scrolling_settled' into Allure timeline tracker.
+2026-05-20 15:48:35,056 - root - INFO - Selecting Cancellation Addon preferences naturally...
+2026-05-20 15:48:36,141 - root - INFO - Filling contact details input nodes...
+2026-05-20 15:48:37,146 - root - INFO - Screenshot saved to reports/screenshots/contact_information_saved_20260520-154836.png
+2026-05-20 15:48:37,150 - root - INFO - Successfully embedded 'contact_information_saved' into Allure timeline tracker.
+2026-05-20 15:48:38,651 - root - INFO - Proceeding to secure checkout payment page gateway...
+2026-05-20 15:48:38,873 - root - INFO - Checkout form dispatch completed.
+2026-05-20 15:48:38,874 - root - INFO - Arrived at Final Secure Checkout Terminal Panel.
+2026-05-20 15:48:38,874 - root - INFO - Selecting 'Credit/Debit/ATM Card' checkout channel tab...
+2026-05-20 15:48:47,057 - root - INFO - Screenshot saved to reports/screenshots/credit_card_tab_selected_20260520-154846.png
+2026-05-20 15:48:47,060 - root - INFO - Successfully embedded 'credit_card_tab_selected' into Allure timeline tracker.
+2026-05-20 15:48:48,061 - root - INFO - Entering mock financial credentials for terminal field execution check...
+2026-05-20 15:48:50,838 - root - INFO - Screenshot saved to reports/screenshots/payment_form_populated_20260520-154850.png
+2026-05-20 15:48:50,843 - root - INFO - Successfully embedded 'payment_form_populated' into Allure timeline tracker.
+2026-05-20 15:48:54,844 - root - INFO - =================================================================
+2026-05-20 15:48:54,845 - root - INFO - SUCCESS: Full Booking Flow Executed and Verified Flawlessly!
+2026-05-20 15:48:54,845 - root - INFO - =================================================================
+2026-05-20 16:10:07,856 - root - INFO - =================================================================
+2026-05-20 16:10:07,889 - root - INFO - STARTING EXECUTION: Automated E2E Train Booking Journey Engine
+2026-05-20 16:10:07,889 - root - INFO - =================================================================
+2026-05-20 16:10:07,889 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 16:10:10,884 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-161010.png
+2026-05-20 16:10:10,888 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 16:10:10,888 - root - INFO - Entering routing paths...
+2026-05-20 16:10:10,888 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 16:10:13,176 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:10:14,063 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-161013.png
+2026-05-20 16:10:14,066 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:10:14,067 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 16:10:16,196 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:10:16,952 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-161016.png
+2026-05-20 16:10:16,953 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:10:16,954 - root - INFO - Selecting journey date (June 2026)...
+2026-05-20 16:10:17,433 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow_20260520-161017.png
+2026-05-20 16:10:17,435 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow' into Allure timeline tracker.
+2026-05-20 16:16:55,554 - root - INFO - =================================================================
+2026-05-20 16:16:55,592 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 16:16:55,592 - root - INFO - =================================================================
+2026-05-20 16:16:56,325 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-161656.png
+2026-05-20 16:16:56,325 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 16:22:09,146 - root - INFO - =================================================================
+2026-05-20 16:22:09,208 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 16:22:09,208 - root - INFO - =================================================================
+2026-05-20 16:22:10,778 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-162210.png
+2026-05-20 16:22:10,779 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 16:22:29,079 - root - INFO - =================================================================
+2026-05-20 16:22:29,080 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 16:22:29,081 - root - INFO - =================================================================
+2026-05-20 16:22:29,366 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-162229.png
+2026-05-20 16:22:29,369 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 16:22:56,913 - root - INFO - =================================================================
+2026-05-20 16:22:56,947 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 16:22:56,947 - root - INFO - =================================================================
+2026-05-20 16:22:56,962 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 16:23:00,947 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-162300.png
+2026-05-20 16:23:00,965 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 16:23:00,965 - root - INFO - Entering routing paths...
+2026-05-20 16:23:00,965 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 16:23:03,425 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:23:04,286 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-162304.png
+2026-05-20 16:23:04,307 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:23:04,307 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 16:23:06,480 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:23:07,255 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-162307.png
+2026-05-20 16:23:07,298 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:23:07,635 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-162307.png
+2026-05-20 16:23:07,653 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 16:25:03,811 - root - INFO - =================================================================
+2026-05-20 16:25:03,851 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 16:25:03,851 - root - INFO - =================================================================
+2026-05-20 16:25:03,869 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 16:25:06,458 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-162505.png
+2026-05-20 16:25:06,473 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 16:25:06,486 - root - INFO - Entering routing paths...
+2026-05-20 16:25:06,486 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 16:25:08,803 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:25:09,924 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-162509.png
+2026-05-20 16:25:09,926 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:25:09,926 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 16:25:12,133 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:25:12,893 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-162512.png
+2026-05-20 16:25:12,926 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:25:12,926 - root - INFO - Selecting journey date (June 26, 2026)...
+2026-05-20 16:25:12,927 - root - INFO - Initiating dynamic lookup loop for: June 2026
+2026-05-20 16:25:23,175 - root - INFO - Target month not visible yet. Advancing calendar grid forward...
+2026-05-20 16:25:34,072 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-162533.png
+2026-05-20 16:25:34,074 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 16:31:35,695 - root - INFO - =================================================================
+2026-05-20 16:31:35,728 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 16:31:35,728 - root - INFO - =================================================================
+2026-05-20 16:31:35,739 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 16:31:39,066 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-163138.png
+2026-05-20 16:31:39,076 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 16:31:39,076 - root - INFO - Entering routing paths...
+2026-05-20 16:31:39,076 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 16:31:41,371 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:31:42,572 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-163142.png
+2026-05-20 16:31:42,577 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:31:42,577 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 16:31:44,764 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:31:45,554 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-163145.png
+2026-05-20 16:31:45,557 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:31:45,557 - root - INFO - Selecting journey date (June 26)...
+2026-05-20 16:31:45,557 - root - INFO - Targeting day '26' inside the visible 'June' grid container...
+2026-05-20 16:31:55,823 - root - WARNING - Standard click blocked on date element: Message: 
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff658d8e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff658d8e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff659108bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff658b03e3c]
+	msedgedriver!(No symbol) [0x7ff658b040a5]
+	msedgedriver!(No symbol) [0x7ff658b41357]
+	msedgedriver!(No symbol) [0x7ff658afaaa7]
+	msedgedriver!(No symbol) [0x7ff658b3f0b2]
+	msedgedriver!(No symbol) [0x7ff658afa2ec]
+	msedgedriver!(No symbol) [0x7ff658af9546]
+	msedgedriver!(No symbol) [0x7ff658afa113]
+	msedgedriver!(No symbol) [0x7ff658bc2519]
+	msedgedriver!(No symbol) [0x7ff658bbec93]
+	msedgedriver!(No symbol) [0x7ff658bcf182]
+	msedgedriver!GetHandleVerifier [0x7ff658daaa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff658db32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff658d95724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff658d95845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff658d82b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+. Executing JS override.
+2026-05-20 16:32:06,923 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-163206.png
+2026-05-20 16:32:06,925 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 16:36:47,125 - root - INFO - =================================================================
+2026-05-20 16:36:47,157 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 16:36:47,158 - root - INFO - =================================================================
+2026-05-20 16:36:47,176 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 16:36:49,661 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-163649.png
+2026-05-20 16:36:49,672 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 16:36:49,672 - root - INFO - Entering routing paths...
+2026-05-20 16:36:49,673 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 16:36:51,967 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:36:53,015 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-163652.png
+2026-05-20 16:36:53,026 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:36:53,027 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 16:36:55,430 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:36:56,258 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-163656.png
+2026-05-20 16:36:56,263 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:36:56,263 - root - INFO - Selecting journey date (June 26)...
+2026-05-20 16:36:56,264 - root - INFO - Waiting for calendar dropdown view to stabilize...
+2026-05-20 16:36:57,852 - root - INFO - Targeting day element via dynamic route matching: June 26
+2026-05-20 16:37:08,801 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-163708.png
+2026-05-20 16:37:08,803 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 16:38:27,748 - root - INFO - =================================================================
+2026-05-20 16:38:27,784 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 16:38:27,784 - root - INFO - =================================================================
+2026-05-20 16:38:27,794 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 16:38:30,866 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-163830.png
+2026-05-20 16:38:30,882 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 16:38:30,882 - root - INFO - Entering routing paths...
+2026-05-20 16:38:30,883 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 16:38:33,129 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:38:33,951 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-163833.png
+2026-05-20 16:38:33,953 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:38:33,954 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 16:38:36,147 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 16:38:36,938 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-163836.png
+2026-05-20 16:38:36,944 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 16:38:36,944 - root - INFO - Selecting journey date (June 26)...
+2026-05-20 16:38:36,944 - root - INFO - Waiting for calendar dropdown view to stabilize...
+2026-05-20 16:38:38,445 - root - INFO - Targeting day element via flexible route matching: June 26
+2026-05-20 16:38:49,273 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-163849.png
+2026-05-20 16:38:49,275 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 17:17:57,940 - root - INFO - =================================================================
+2026-05-20 17:17:58,238 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 17:17:58,238 - root - INFO - =================================================================
+2026-05-20 17:17:58,526 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 17:18:01,479 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-171800.png
+2026-05-20 17:18:01,499 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 17:18:01,500 - root - INFO - Entering routing paths...
+2026-05-20 17:18:01,500 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 17:18:03,883 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:18:04,664 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-171804.png
+2026-05-20 17:18:04,668 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:18:04,668 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 17:18:06,840 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:18:07,574 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-171807.png
+2026-05-20 17:18:07,577 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:18:07,577 - root - INFO - Selecting journey date (June 26)...
+2026-05-20 17:18:07,578 - root - INFO - Waiting for calendar dropdown view to stabilize...
+2026-05-20 17:18:09,078 - root - INFO - Targeting day element via flexible route matching: June 26
+2026-05-20 17:18:20,021 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-171819.png
+2026-05-20 17:18:20,023 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 17:22:58,685 - root - INFO - =================================================================
+2026-05-20 17:22:58,718 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 17:22:58,718 - root - INFO - =================================================================
+2026-05-20 17:22:58,731 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 17:23:01,884 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-172301.png
+2026-05-20 17:23:01,884 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 17:23:01,884 - root - INFO - Entering routing paths...
+2026-05-20 17:23:01,885 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 17:23:04,240 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:23:05,232 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-172305.png
+2026-05-20 17:23:05,233 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:23:05,233 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 17:23:07,458 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:23:08,234 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-172308.png
+2026-05-20 17:23:08,235 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:23:08,235 - root - INFO - Selecting journey date (June 26)...
+2026-05-20 17:23:08,235 - root - INFO - Waiting for calendar dropdown view to settle...
+2026-05-20 17:23:09,236 - root - INFO - Targeting explicit grid cell: June 26
+2026-05-20 17:23:20,138 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-172320.png
+2026-05-20 17:23:20,138 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 17:26:05,089 - root - INFO - =================================================================
+2026-05-20 17:26:05,120 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 17:26:05,121 - root - INFO - =================================================================
+2026-05-20 17:26:05,133 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 17:26:07,653 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-172607.png
+2026-05-20 17:26:07,654 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 17:26:07,654 - root - INFO - Entering routing paths...
+2026-05-20 17:26:07,654 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 17:26:09,870 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:26:10,851 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-172610.png
+2026-05-20 17:26:10,852 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:26:10,852 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 17:26:13,313 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:26:14,106 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-172613.png
+2026-05-20 17:26:14,106 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:26:14,106 - root - INFO - Selecting journey date (June 26)...
+2026-05-20 17:26:14,107 - root - INFO - Waiting for calendar dropdown view to settle...
+2026-05-20 17:26:15,307 - root - INFO - Targeting explicit grid cell: June 26
+2026-05-20 17:26:17,246 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-172617.png
+2026-05-20 17:26:17,246 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 17:45:37,934 - root - INFO - =================================================================
+2026-05-20 17:45:37,969 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 17:45:37,969 - root - INFO - =================================================================
+2026-05-20 17:45:38,006 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 17:45:43,279 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-174542.png
+2026-05-20 17:45:43,287 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 17:45:43,288 - root - INFO - Entering routing paths...
+2026-05-20 17:45:43,289 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 17:45:48,543 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:45:49,681 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-174549.png
+2026-05-20 17:45:49,682 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:45:49,683 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 17:45:52,091 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:45:53,521 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-174553.png
+2026-05-20 17:45:53,521 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:45:53,522 - root - INFO - Selecting journey date (June 26)...
+2026-05-20 17:45:53,522 - root - INFO - Selecting date: June 26
+2026-05-20 17:45:54,723 - root - INFO - Looking for day: 26
+2026-05-20 17:45:55,674 - root - INFO - Date selected: June 26
+2026-05-20 17:45:56,436 - root - INFO - Screenshot saved to reports/screenshots/calendar_June_26_selected_20260520-174556.png
+2026-05-20 17:45:56,437 - root - INFO - Successfully embedded 'calendar_June_26_selected' into Allure timeline tracker.
+2026-05-20 17:45:56,437 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 17:45:57,440 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 17:45:59,770 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-174559.png
+2026-05-20 17:45:59,771 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 17:52:23,421 - root - INFO - =================================================================
+2026-05-20 17:52:23,465 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 17:52:23,465 - root - INFO - =================================================================
+2026-05-20 17:52:23,500 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 17:52:26,349 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-175225.png
+2026-05-20 17:52:26,355 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 17:52:26,355 - root - INFO - Entering routing paths...
+2026-05-20 17:52:26,356 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 17:52:28,779 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:52:29,941 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-175229.png
+2026-05-20 17:52:29,956 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:52:29,958 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 17:52:32,202 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:52:33,158 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-175232.png
+2026-05-20 17:52:33,177 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:52:33,177 - root - INFO - Selecting journey date (June 26)...
+2026-05-20 17:52:33,177 - root - INFO - Targeting localized calendar date: June 26
+2026-05-20 17:52:34,378 - root - INFO - Generated Dynamic XPath Selector: //div[contains(@class, 'styles_month__')] [descendant::p[contains(text(), 'June')]]//p[contains(@class,'styles_dayCmp__calDate__Nc0Hp') and text()='26']
+2026-05-20 17:52:44,891 - root - ERROR - CRITICAL: Selection failure for target timeline window 'June 26': Message: 
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff75df4e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff75df4e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff75e2c8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff75dcc3e3c]
+	msedgedriver!(No symbol) [0x7ff75dcc40a5]
+	msedgedriver!(No symbol) [0x7ff75dd01357]
+	msedgedriver!(No symbol) [0x7ff75dcbaaa7]
+	msedgedriver!(No symbol) [0x7ff75dcff0b2]
+	msedgedriver!(No symbol) [0x7ff75dcba2ec]
+	msedgedriver!(No symbol) [0x7ff75dcb9546]
+	msedgedriver!(No symbol) [0x7ff75dcba113]
+	msedgedriver!(No symbol) [0x7ff75dd82519]
+	msedgedriver!(No symbol) [0x7ff75dd7ec93]
+	msedgedriver!(No symbol) [0x7ff75dd8f182]
+	msedgedriver!GetHandleVerifier [0x7ff75df6aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff75df732f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff75df55724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff75df55845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff75df42b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+2026-05-20 17:52:45,038 - root - INFO - Screenshot saved to reports/screenshots/select_date_fail_20260520-175244.png
+2026-05-20 17:52:45,041 - root - INFO - Successfully embedded 'select_date_fail' into Allure timeline tracker.
+2026-05-20 17:52:45,928 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-175245.png
+2026-05-20 17:52:45,930 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 17:57:31,758 - root - INFO - =================================================================
+2026-05-20 17:57:31,792 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 17:57:31,792 - root - INFO - =================================================================
+2026-05-20 17:57:31,820 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 17:57:35,682 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-175735.png
+2026-05-20 17:57:35,689 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 17:57:35,690 - root - INFO - Entering routing paths...
+2026-05-20 17:57:35,692 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 17:57:38,449 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:57:39,366 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-175739.png
+2026-05-20 17:57:39,378 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:57:39,379 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 17:57:41,617 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 17:57:42,666 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-175742.png
+2026-05-20 17:57:42,680 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 17:57:42,681 - root - INFO - Selecting hardcoded journey date (June 26)...
+2026-05-20 17:57:42,681 - root - INFO - Locating June 26 on the calendar UI using native elements...
+2026-05-20 17:57:53,892 - root - ERROR - Failed to click hardcoded June 26 natively: Message: 
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7c959e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7c959e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7c9918bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7c9313e3c]
+	msedgedriver!(No symbol) [0x7ff7c93140a5]
+	msedgedriver!(No symbol) [0x7ff7c9351357]
+	msedgedriver!(No symbol) [0x7ff7c930aaa7]
+	msedgedriver!(No symbol) [0x7ff7c934f0b2]
+	msedgedriver!(No symbol) [0x7ff7c930a2ec]
+	msedgedriver!(No symbol) [0x7ff7c9309546]
+	msedgedriver!(No symbol) [0x7ff7c930a113]
+	msedgedriver!(No symbol) [0x7ff7c93d2519]
+	msedgedriver!(No symbol) [0x7ff7c93cec93]
+	msedgedriver!(No symbol) [0x7ff7c93df182]
+	msedgedriver!GetHandleVerifier [0x7ff7c95baa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7c95c32f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7c95a5724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7c95a5845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7c9592b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+2026-05-20 17:57:54,046 - root - INFO - Screenshot saved to reports/screenshots/hardcoded_date_fail_20260520-175753.png
+2026-05-20 17:57:54,050 - root - INFO - Successfully embedded 'hardcoded_date_fail' into Allure timeline tracker.
+2026-05-20 17:57:54,828 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-175754.png
+2026-05-20 17:57:54,832 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 18:02:53,403 - root - INFO - =================================================================
+2026-05-20 18:02:53,440 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 18:02:53,440 - root - INFO - =================================================================
+2026-05-20 18:02:53,468 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 18:02:58,754 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-180256.png
+2026-05-20 18:02:58,755 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 18:02:58,755 - root - INFO - Entering routing paths...
+2026-05-20 18:02:58,756 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 18:03:01,443 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 18:03:02,373 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-180302.png
+2026-05-20 18:03:02,373 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 18:03:02,373 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 18:03:04,623 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 18:03:05,591 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-180305.png
+2026-05-20 18:03:05,592 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 18:03:05,592 - root - INFO - Selecting hardcoded journey date (June 26)...
+2026-05-20 18:03:05,593 - root - INFO - Targeting June 26 using streamlined native layout path...
+2026-05-20 18:03:06,783 - root - ERROR - Failed to natively click June 26: Message: element click intercepted: Element is not clickable at point (915, 690)
+  (Session info: MicrosoftEdge=148.0.3967.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+	msedgedriver!GetHandleVerifier [0x7ff7fdd6e295+e0f5]
+	msedgedriver!GetHandleVerifier [0x7ff7fdd6e2f4+e154]
+	msedgedriver!GetHandleVerifier [0x7ff7fe0e8bca+388a2a]
+	msedgedriver!(No symbol) [0x7ff7fdae973f]
+	msedgedriver!(No symbol) [0x7ff7fdae7f01]
+	msedgedriver!(No symbol) [0x7ff7fdae6026]
+	msedgedriver!(No symbol) [0x7ff7fdae545d]
+	msedgedriver!(No symbol) [0x7ff7fdadb05d]
+	msedgedriver!(No symbol) [0x7ff7fdb041ba]
+	msedgedriver!(No symbol) [0x7ff7fdadaaa7]
+	msedgedriver!(No symbol) [0x7ff7fdada9ad]
+	msedgedriver!(No symbol) [0x7ff7fdadaaa7]
+	msedgedriver!(No symbol) [0x7ff7fdb1f0b2]
+	msedgedriver!(No symbol) [0x7ff7fdada2ec]
+	msedgedriver!(No symbol) [0x7ff7fdad9546]
+	msedgedriver!(No symbol) [0x7ff7fdada113]
+	msedgedriver!(No symbol) [0x7ff7fdba2519]
+	msedgedriver!(No symbol) [0x7ff7fdb9ec93]
+	msedgedriver!(No symbol) [0x7ff7fdbaf182]
+	msedgedriver!GetHandleVerifier [0x7ff7fdd8aa68+2a8c8]
+	msedgedriver!GetHandleVerifier [0x7ff7fdd932f6+33156]
+	msedgedriver!GetHandleVerifier [0x7ff7fdd75724+15584]
+	msedgedriver!GetHandleVerifier [0x7ff7fdd75845+156a5]
+	msedgedriver!GetHandleVerifier [0x7ff7fdd62b63+29c3]
+	KERNEL32!BaseThreadInitThunk [0x7ffc141ae957+17]
+	ntdll!RtlUserThreadStart [0x7ffc15ce427c+2c]
+
+2026-05-20 18:03:06,980 - root - INFO - Screenshot saved to reports/screenshots/hardcoded_date_fail_20260520-180306.png
+2026-05-20 18:03:06,980 - root - INFO - Successfully embedded 'hardcoded_date_fail' into Allure timeline tracker.
+2026-05-20 18:03:08,089 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-180307.png
+2026-05-20 18:03:08,090 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.
+2026-05-20 18:06:19,224 - root - INFO - =================================================================
+2026-05-20 18:06:19,243 - root - INFO - STARTING EXECUTION: Routing from delhi to agra
+2026-05-20 18:06:19,243 - root - INFO - =================================================================
+2026-05-20 18:06:19,295 - root - INFO - Navigating to https://www.goibibo.com/trains/
+2026-05-20 18:06:23,414 - root - INFO - Screenshot saved to reports/screenshots/goibibo_homepage_loaded_20260520-180622.png
+2026-05-20 18:06:23,414 - root - INFO - Successfully embedded 'goibibo_homepage_loaded' into Allure timeline tracker.
+2026-05-20 18:06:23,415 - root - INFO - Entering routing paths...
+2026-05-20 18:06:23,416 - root - INFO - Opening Source input view and typing: delhi
+2026-05-20 18:06:27,144 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 18:06:28,233 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-180628.png
+2026-05-20 18:06:28,234 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 18:06:28,235 - root - INFO - Opening Destination input view and typing: agra
+2026-05-20 18:06:30,590 - root - INFO - Selecting top auto-suggest recommendation matching string query
+2026-05-20 18:06:31,556 - root - INFO - Screenshot saved to reports/screenshots/auto_suggestion_selected_20260520-180631.png
+2026-05-20 18:06:31,557 - root - INFO - Successfully embedded 'auto_suggestion_selected' into Allure timeline tracker.
+2026-05-20 18:06:31,557 - root - INFO - Selecting hardcoded journey date (June 26)...
+2026-05-20 18:06:31,557 - root - INFO - Targeting June 26 via direct JavaScript click invocation...
+2026-05-20 18:06:31,644 - root - INFO - Successfully forced June 26 selection using execute_script!
+2026-05-20 18:06:32,370 - root - INFO - Screenshot saved to reports/screenshots/calendar_june_26_selected_20260520-180632.png
+2026-05-20 18:06:32,371 - root - INFO - Successfully embedded 'calendar_june_26_selected' into Allure timeline tracker.
+2026-05-20 18:06:32,371 - root - INFO - Submitting query parameters -> Dispatching to Results View.
+2026-05-20 18:06:33,372 - root - INFO - Triggering structural train submission processing search sequence
+2026-05-20 18:06:33,625 - root - INFO - Awaiting Results Dashboard Page Anchor stability...
+2026-05-20 18:06:35,924 - root - INFO - Screenshot saved to reports/screenshots/search_results_page_loaded_20260520-180635.png
+2026-05-20 18:06:35,924 - root - INFO - Successfully embedded 'search_results_page_loaded' into Allure timeline tracker.
+2026-05-20 18:06:35,956 - root - INFO - Anchor and URL verified successfully! Current URL: https://www.goibibo.com/trains/dsrp/ANVT/AGC/20260626/
+2026-05-20 18:06:35,957 - root - INFO - Engaging 'Show available only' filter to hide waitlisted blocks...
+2026-05-20 18:06:38,213 - root - INFO - Screenshot saved to reports/screenshots/available_only_filter_applied_20260520-180638.png
+2026-05-20 18:06:38,214 - root - INFO - Successfully embedded 'available_only_filter_applied' into Allure timeline tracker.
+2026-05-20 18:06:38,214 - root - INFO - Applying left sidebar filter: '2A'...
+2026-05-20 18:06:40,301 - root - INFO - Screenshot saved to reports/screenshots/2A_filter_applied_20260520-180640.png
+2026-05-20 18:06:40,301 - root - INFO - Successfully embedded '2A_filter_applied' into Allure timeline tracker.
+2026-05-20 18:06:40,301 - root - INFO - Scanning active train cards for '2A' availability >= 5...
+2026-05-20 18:06:51,394 - root - INFO - Screenshot saved to reports/screenshots/CRITICAL_FAILURE_test_complete_train_booking_flow[data0]_20260520-180651.png
+2026-05-20 18:06:51,395 - root - INFO - Successfully embedded 'CRITICAL_FAILURE_test_complete_train_booking_flow[data0]' into Allure timeline tracker.

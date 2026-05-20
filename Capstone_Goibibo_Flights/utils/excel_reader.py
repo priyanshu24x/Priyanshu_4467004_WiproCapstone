@@ -1,8 +1,8 @@
 # Reads Excel files (.xlsx) and returns data as a list of dictionaries (each row becomes a dictionary with column headers as keys).
-
 import os
 import sys
 import openpyxl
+
 
 class ExcelReader:
 
@@ -16,8 +16,6 @@ class ExcelReader:
 
         data = []
         try:
-            # Load the workbook, using data_only=True to get calculated values instead of formulas
-            # Pass the full excel_path, not just the file_name
             workbook = openpyxl.load_workbook(excel_path, data_only=True)
             sheet = workbook[sheet_name]
         except FileNotFoundError:
@@ -30,18 +28,30 @@ class ExcelReader:
             print(f"An unexpected error occurred while loading the Excel file: {e}", file=sys.stderr)
             return []
 
-        # Extract headers from the first row
         headers = [cell.value for cell in sheet[1]]
-        # Filter out None values from headers if necessary, or handle them
-        # For example, to replace None with an empty string:
-        # headers = [cell.value if cell.value is not None else "" for cell in sheet[1]]
 
-        # Iterate over rows starting from the second row (skipping headers)
         for row_index in range(2, sheet.max_row + 1):
             row_data = {}
             for col_index in range(1, sheet.max_column + 1):
                 header = headers[col_index - 1]
-                row_data[header] = sheet.cell(row=row_index, column=col_index).value
+                raw_value = sheet.cell(row=row_index, column=col_index).value
+
+                # ==========================================
+                # SANITIZATION MECHANISM
+                # ==========================================
+                if raw_value is not None:
+                    clean_value = str(raw_value).strip()
+                    # Strip Excel's floating point zeros (e.g., "26.0" -> "26")
+                    if clean_value.endswith('.0'):
+                        clean_value = clean_value[:-2]
+                    # Format the month perfectly for the XPath
+                    if header == 'TravelMonth':
+                        clean_value = clean_value.capitalize()
+
+                    row_data[header] = clean_value
+                else:
+                    row_data[header] = ""
+
             data.append(row_data)
 
         return data
