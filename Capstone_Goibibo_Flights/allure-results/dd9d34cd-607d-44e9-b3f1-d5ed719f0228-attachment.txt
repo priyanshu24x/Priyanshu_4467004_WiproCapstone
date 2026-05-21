@@ -1,0 +1,17 @@
+[32mINFO    [0m root:test_cases.py:101 =================================================================
+[32mINFO    [0m root:test_cases.py:102 STARTING EXECUTION: Test 1 - Coach Class Filter Validation
+[32mINFO    [0m root:test_cases.py:103 =================================================================
+[32mINFO    [0m root:homepage.py:22 Navigating to https://www.goibibo.com/trains/
+[32mINFO    [0m root:homepage.py:31 Opening Source input view and typing: delhi
+[32mINFO    [0m root:homepage.py:51 Selecting top auto-suggest recommendation matching string query
+[32mINFO    [0m root:homepage.py:41 Opening Destination input view and typing: agra
+[32mINFO    [0m root:homepage.py:51 Selecting top auto-suggest recommendation matching string query
+[32mINFO    [0m root:homepage.py:75 Initiating calendar search loop for: June 2026
+[32mINFO    [0m root:homepage.py:79 Found June 2026 on screen! Proceeding to date selection.
+[32mINFO    [0m root:homepage.py:112 Triggering structural train submission processing search sequence
+[32mINFO    [0m root:results_page.py:57 Applying left sidebar filter: '3A - AC 3 Tier Sleeper'...
+[32mINFO    [0m root:results_page.py:115 Verifying that visible train cards show option: 3A
+[32mINFO    [0m root:results_page.py:127 Card 1 successfully verified for class 3A.
+[32mINFO    [0m root:results_page.py:127 Card 2 successfully verified for class 3A.
+[32mINFO    [0m root:results_page.py:127 Card 3 successfully verified for class 3A.
+[32mINFO    [0m root:test_cases.py:124 SUCCESS: Test 1 - Coach Class Filter verified successfully.

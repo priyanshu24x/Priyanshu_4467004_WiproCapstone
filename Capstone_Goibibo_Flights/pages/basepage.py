@@ -2,6 +2,8 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from utils.screenshot import ScreenshotUtil
+import allure
+from selenium.webdriver.remote.webdriver import WebDriver
 
 class BasePage:
     def __init__(self, driver, timeout=10):
@@ -30,5 +32,15 @@ class BasePage:
         except:
             return False
 
-    def take_screenshot(self, step_name):
-        ScreenshotUtil.capture_screenshot(self.driver, step_name)
+    def take_screenshot(self, name: str):
+        screenshot_path = f"reports/screenshots/{name}.png"
+        # 1. Save the file locally to your system directory as usual
+        self.driver.save_screenshot(screenshot_path)
+
+        # 2. Attach it directly to the active Allure test context
+        with open(screenshot_path, "rb") as image_file:
+            allure.attach(
+                image_file.read(),
+                name=name,
+                attachment_type=allure.attachment_type.PNG
+            )

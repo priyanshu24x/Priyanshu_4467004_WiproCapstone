@@ -22,6 +22,8 @@ class HomePage(BasePage):
         logger.info("Navigating to https://www.goibibo.com/trains/")
         self.driver.get("https://www.goibibo.com/trains/")
         self.driver.maximize_window()
+        self.driver.execute_script("document.elementFromPoint(window.innerWidth/2, window.innerHeight/2).click();")
+        time.sleep(1)
         self.take_screenshot("goibibo_homepage_loaded")
 
     @allure.step("Enter Source City: {city}")
@@ -52,31 +54,57 @@ class HomePage(BasePage):
         time.sleep(0.5)
         self.take_screenshot("auto_suggestion_selected")
 
-    @allure.step("Select Hardcoded Journey Date: June 26")
-    def select_hardcoded_june_date(self):
-        logger.info("Targeting June 26 via direct JavaScript click invocation...")
+
+    def _sanitize_date_input(self, travel_month, travel_day):
+        # Helper to standardize raw Excel inputs into clean string match values.
+        clean_day = str(int(float(travel_day)))
+        clean_month = str(travel_month).strip().capitalize()
+        return clean_month, clean_day
+
+    def _is_month_visible(self, target_month_year):
+        # Helper to quickly scan if a month header is active in the DOM view.
+        month_header_xpath = f"//p[text()='{target_month_year}']"
+        return len(self.driver.find_elements(By.XPATH, month_header_xpath)) > 0
+
+    @allure.step("Select Dynamic Journey Date: {travel_month} {travel_day}")
+    def select_journey_date(self, travel_month, travel_day):
+        # to navigate the calendar and select the date.
+        clean_month, clean_day = self._sanitize_date_input(travel_month, travel_day)
+        target_month_year = f"{clean_month} 2026"
+
+        logger.info(f"Initiating calendar search loop for: {target_month_year}")
+
+        for attempt in range(3):  # Limit searching to 3 page flips max
+            if self._is_month_visible(target_month_year):
+                logger.info(f"Found {target_month_year} on screen! Proceeding to date selection.")
+                self._click_date_element(target_month_year, clean_day)
+                return True
+
+            # If not visible, advance the calendar view forward
+            logger.info(f"'{target_month_year}' hidden. Clicking Next Arrow...")
+            next_arrow = self.wait.until(EC.element_to_be_clickable(self.CALENDAR_NEXT_ARROW))
+            next_arrow.click()
+            time.sleep(0.8)
+
+        # Fallback closure if loop fails
+        error_msg = f"CRITICAL ERR: Date '{target_month_year}' was not found within calendar limits!"
+        logger.error(error_msg)
+        self.take_screenshot("date_out_of_bounds_fail")
+        raise Exception(error_msg)
+
+    def _click_date_element(self, target_month_year, clean_day):
+        """Helper to execute the direct JavaScript click injection on the final node."""
+        dynamic_date_xpath = (
+            f"//div[contains(@class, 'styles_calMnth__calCntWrp__')][descendant::p[text()='{target_month_year}']]"
+            f"//p[text()='{clean_day}']"
+        )
         try:
-            # Solid text-anchored XPath isolating June 2026
-            june_26_xpath = (
-                "//div[contains(@class, 'styles_calMnth__calCntWrp__')][descendant::p[text()='June 2026']]"
-                "//p[text()='26']"
-            )
-
-            # Wait until the element exists in the DOM structure
-            day_element = self.wait.until(
-                EC.presence_of_element_located((By.XPATH, june_26_xpath))
-            )
-
-            # Execute browser-level JavaScript click
+            day_element = self.wait.until(EC.presence_of_element_located((By.XPATH, dynamic_date_xpath)))
             self.driver.execute_script("arguments[0].click();", day_element)
-            logger.info("Successfully forced June 26 selection using execute_script!")
-
             time.sleep(0.5)
-            self.take_screenshot("calendar_june_26_selected")
-
+            self.take_screenshot(f"calendar_{target_month_year.replace(' ', '_')}_{clean_day}_selected")
         except Exception as e:
-            logger.error(f"Failed to click June 26 using JavaScript fallback: {e}")
-            self.take_screenshot("hardcoded_date_fail")
+            logger.error(f"Month visible but day extraction/click sequence failed: {e}")
             raise
 
     @allure.step("Click Search Trains Button")
@@ -84,3 +112,20 @@ class HomePage(BasePage):
         logger.info("Triggering structural train submission processing search sequence")
         search_action_el = self.wait.until(EC.element_to_be_clickable(self.TRAIN_SEARCH_BTN))
         search_action_el.click()
+
+    def train_data_for_csv(self, data):
+        from_city = data["Source"]
+        to_city = data["Destination"]
+        travel_month = data["TravelMonth"]
+        travel_day = data["TravelDay"]
+
+        self.enter_source(from_city)
+        self.click_first_suggestion()
+        self.enter_destination(to_city)
+        self.click_first_suggestion()
+        self.select_journey_date(travel_month, travel_day)
+        self.click_search()
+        time.sleep(1)
+        self.driver.execute_script("document.elementFromPoint(window.innerWidth/2, window.innerHeight/2).click();")
+        time.sleep(1)
+

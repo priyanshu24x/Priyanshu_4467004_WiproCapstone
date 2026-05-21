@@ -28,7 +28,6 @@ def driver():
 
     driver = webdriver.Edge(options=edge_options)
 
-    # Optional: Uncomment if you want the driver fixture to load the landing URL automatically
     # driver.get(base_url)
 
     yield driver

@@ -52,9 +52,9 @@ def test_complete_train_booking_flow(driver, data):
     homepage.enter_destination(data['Destination'])
     homepage.click_first_suggestion()
 
-    # Simplified: Hardcoding the target date to isolate the Excel issue
-    logger.info("Selecting hardcoded journey date (June 26)...")
-    homepage.select_hardcoded_june_date()
+    # NEW DYNAMIC EXCEL PATHWAY
+    logger.info(f"Extracting target dates from Excel matrix: {data['TravelMonth']} {data['TravelDay']}")
+    homepage.select_journey_date(data['TravelMonth'], data['TravelDay'])
 
     logger.info("Submitting query parameters -> Dispatching to Results View.")
     time.sleep(1)  # ⏳ Buffer to let the calendar UI fully close before clicking search
@@ -81,33 +81,69 @@ def test_complete_train_booking_flow(driver, data):
     # =========================================================================
     logger.info("Arrived at Checkout Details Form view. Attaching profile credentials...")
 
+    # Pull data row dynamically from Sheet 3
+    passenger_data = ExcelReader.read_excel("booking_data.xlsx", "PassengerDetails")[0]
+
     details_page.enter_irctc_id("priyanshu4902")
     logger.info("IRCTC Username applied.")
 
     logger.info("Opening Passenger Registration modal view...")
-    details_page.fill_passenger_details(name="John Doe", age=32, gender="male")
+    details_page.fill_passenger_details(
+        name=passenger_data['FullName'],
+        age=int(passenger_data['Age']),
+        gender=passenger_data['Gender'],
+        meal=passenger_data['MealOption']
+    )
 
     logger.info("Configuring contact channels and disabling default insurance flags...")
     details_page.wait_for_modal_to_settle()
-    time.sleep(1)
+    time.sleep(0.5)
     details_page.scroll_to_element()
-    time.sleep(1)
+    time.sleep(0.5)
     details_page.select_cancellation_addon()
     time.sleep(1)
-    details_page.fill_contact_information(mobile="9019019015", email="automation_test@gmail.com")
+
+    # DYNAMIC CONTACT CHANNELS FROM EXCEL SHEET 3
+    details_page.fill_contact_information(
+        mobile=str(int(float(passenger_data['ContactMobile']))),  # Sanitizes numbers from Excel
+        email=passenger_data['ContactEmail']
+    )
     time.sleep(1.5)
     details_page.click_proceed_to_payment()
 
     # =========================================================================
-    # STEP 4: GATEWAY LANDING & MOCK CARD DETAIL POPULATION
+    # STEP 4: PAYMENT GATEWAY PROCESSING
     # =========================================================================
-    logger.info("Arrived at Final Secure Checkout Terminal Panel.")
-    payment_page.navigate_to_credit_card_form()
+    logger.info("Arrived at payment gateway page view. Extracting test card details from Sheet 4...")
+    time.sleep(2)  # Give the payment page UI text a moment to fully render
+
+    # Extract the single row data from Sheet 4
+    card_data = ExcelReader.read_excel("booking_data.xlsx", "PaymentDetails")[0]
+
+    # If the UI has a combined MM/YY field, construct it dynamically
+
+    # Clean and format Month data (ensures 2 digits, like turning '5' into '05')
+    clean_month = str(int(float(card_data['ExpiryMonth']))).zfill(2)
+
+    # Clean and format Year data
+    raw_year = str(int(float(card_data['ExpiryYear'])))
+
+    # Fallback: If Excel has a 2-digit year (e.g., '30'), convert it to 4-digits ('2030') to match the input value attribute
+    if len(raw_year) == 2:
+        clean_year = f"20{raw_year}"
+    else:
+        clean_year = raw_year
+
     time.sleep(1)
+    # Send clean data to your Payment Page Object
+    payment_page.fill_card_details(
+        card_no=str(int(float(card_data['CardNumber']))),
+        exp_month=clean_month,
+        exp_year=clean_year,
+        cvv=str(int(card_data['CVV'])),
+        card_name=str(card_data['CardName'])
+    )
 
-    payment_page.fill_mock_card_details(card_no="1234567812345678", cvv="123")
-    time.sleep(4)
+    # Optional: Click final payment confirmation button if you want to test the full loop
+    # payment_page.click_pay_now()
 
-    logger.info("=================================================================")
-    logger.info("SUCCESS: Full Booking Flow Executed and Verified Flawlessly!")
-    logger.info("=================================================================")
