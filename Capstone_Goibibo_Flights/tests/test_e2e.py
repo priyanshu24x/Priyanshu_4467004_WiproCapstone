@@ -1,6 +1,7 @@
+# IMPORTS FOR END TO END TESTS
 import pytest
-import time
 import allure
+from selenium.webdriver.support import expected_conditions as EC
 from pages.homepage import HomePage
 from pages.results_page import ResultsPage
 from pages.details_page import DetailsPage
@@ -10,140 +11,164 @@ from utils.excel_reader import ExcelReader
 
 logger = LogGen.loggen()
 
-# Load the dynamic journey route details from Sheet 1
+# OPENING THE EXCEL FILE
 FILE_NAME = "booking_data.xlsx"
 
-train_data_list = ExcelReader.read_excel(FILE_NAME, "TrainData")
+train_data = ExcelReader.read_excel(FILE_NAME, "TrainData")
+filter_data = ExcelReader.read_excel(FILE_NAME, "FilterPreferences")
+passenger_data = ExcelReader.read_excel(FILE_NAME, "PassengerDetails")
+card_data = ExcelReader.read_excel(FILE_NAME, "PaymentDetails")
+details_data = list(zip(train_data, filter_data, passenger_data, card_data))
 
-# DEBUG PRINT BLOCK
-print("\n" + "="*50)
-print(f"DEBUG: Collected data rows from Excel: {train_data_list}")
-print("="*50 + "\n")
 
-@pytest.mark.parametrize("data", train_data_list)
-@allure.title("End-to-End Train Booking Journey")
-@allure.description(
-    "Validates search, filter selection, passenger details entry, and payment page routing dynamically via Excel.")
-def test_complete_train_booking_flow(driver, data):
+@pytest.mark.regression
+@pytest.mark.parametrize("train, filter, passenger, card", details_data)
+@allure.epic("Train Reservation System")
+@allure.feature("End-to-End Booking Paths")
+@allure.story("Dynamic Spreadsheet Journey Processing")
+@allure.title("Dynamic E2E Train Booking Routing Flow")
+@allure.description("Validates search filters, traveler details, and payment terminal data binding.")
+def test_complete_train_booking_flow(driver, train, filter, passenger, card):
     logger.info("=================================================================")
-    logger.info(f"STARTING EXECUTION: Routing from {data['Source']} to {data['Destination']}")
+    logger.info(f"STARTING EXECUTION: Routing from {train['Source']} to {train['Destination']}")
     logger.info("=================================================================")
 
-    # Load filter constraints and seating preferences from Sheet 2
-    filter_data = ExcelReader.read_excel("booking_data.xlsx", "FilterPreferences")[0]
-    class_filter = filter_data['ClassFilter']
-    min_threshold = filter_data['MinAvailabilityThreshold']
-
+    # CALLING PAGE FUNCTIONS
     homepage = HomePage(driver)
     results_page = ResultsPage(driver)
     details_page = DetailsPage(driver)
     payment_page = PaymentPage(driver)
 
-    homepage.open_goibibo()
+    # STEP 0: DATA FROM THE EXCEL
+    with allure.step(f"Step 0: Extracting Data from Excel File"):
+        # GETTING DATA FROM EXCEL AS VARIABLES OF TrainData
+        source_station_code = train["Source"]
+        destination_station_code = train["Destination"]
+        travel_month = train["TravelMonth"]
+        travel_day = train["TravelDay"]
 
-    # =========================================================================
+        # GETTING DATA FROM EXCEL AS VARIABLES OF FilterPreferences
+        class_filter = filter["ClassFilter"]
+        min_seats = filter["MinAvailabilityThreshold"]
+
+        # GETTING DATA FROM EXCEL AS VARIABLES OF PassengerDetails
+        pass_name = passenger["FullName"]
+        pass_age = passenger["Age"]
+        pass_gender = passenger["Gender"]
+        meal = passenger["MealOption"]
+        pass_mobile = passenger["ContactMobile"]
+        pass_email = passenger["ContactEmail"]
+        pass_id = passenger["IRCTCID"]
+
+        # GETTING DATA FROM EXCEL AS VARIABLES OF PaymentDetails
+        card_no = card["CardNumber"]
+        exp_month = card["ExpiryMonth"]
+        exp_year = card["ExpiryYear"]
+        cvv = card["CVV"]
+        card_name = card["CardName"]
+
     # STEP 1: HOMEPAGE LOOKUPS & DESTINATION ROUTING
-    # =========================================================================
-    logger.info("Entering routing paths...")
+    with (allure.step(f"Step 1: Configure Routing on Homepage ({source_station_code} -> {destination_station_code})")):
+        logger.info("Entering routing paths...")
 
-    homepage.enter_source(data['Source'])
-    homepage.click_first_suggestion()
+        # OPENING HOMEPAGE AND CLOSING POPUP
+        homepage.popup_close()
 
-    homepage.enter_destination(data['Destination'])
-    homepage.click_first_suggestion()
+        # ENTER STATION CODE OF SOURCE CITY AND ASSERTING IT
+        homepage.enter_source(source_station_code)
+        assert source_station_code.lower() in homepage.get_selected_source_text().lower(),f"Source match failure! Expected: '{source_station_code}'but got {homepage.get_selected_source_text()}"
 
-    # NEW DYNAMIC EXCEL PATHWAY
-    logger.info(f"Extracting target dates from Excel matrix: {data['TravelMonth']} {data['TravelDay']}")
-    homepage.select_journey_date(data['TravelMonth'], data['TravelDay'])
+        # ENTER STATION CODE OF DESTINATION CITY AND ASSERTING IT
+        homepage.enter_destination(destination_station_code)
+        assert destination_station_code.lower() in homepage.get_selected_destination_text().lower(), f"Destination match failure! Expected: '{destination_station_code}'but got {homepage.get_selected_destination_text()}"
 
-    logger.info("Submitting query parameters -> Dispatching to Results View.")
-    time.sleep(1)  # ⏳ Buffer to let the calendar UI fully close before clicking search
-    homepage.click_search()
+        logger.info(f"Extracting target dates from Excel matrix: {travel_month} {travel_day}")
 
-    # =========================================================================
+        # ENTERING TRAVEL MONTH AND DATE AND FINDING IT IN THE CALENDER AND ASSERTING IT
+        homepage.select_journey_date(travel_month, travel_day)
+
+        logger.info("Submitting query parameters -> Dispatching to Results View.")
+
+        # SEARCHING FOR TRAINS
+        homepage.click_search()
+
     # STEP 2: SEARCH RESULTS LISTING VERIFICATION & CHOICE SELECTION
-    # =========================================================================
-    logger.info("Awaiting Results Dashboard Page Anchor stability...")
+    with allure.step("Step 2: Validate Search Results and Select Train"):
+        logger.info("Awaiting Results Dashboard Page Anchor stability...")
 
-    assert results_page.verify_results_loaded(), "CRITICAL FAILURE: Train results view failed to render!"
-    logger.info(f"Anchor and URL verified successfully! Current URL: {driver.current_url}")
+        # OPENING RESULTS PAGE AND CLOSING POPUP
+        homepage.popup_close()
 
-    # Apply your optimization filters dynamically
-    results_page.apply_available_only_filter()
-    results_page.apply_dynamic_class_filter(class_filter)
+        # ASSERTING IF TRAINS HAVE LOADED AND ARE PRESENT
+        assert results_page.verify_results_loaded(), "CRITICAL FAILURE: Train results view failed to render!"
+        logger.info(f"Anchor and URL verified successfully! Current URL: {driver.current_url}")
 
-    # Automatically scan the train card list and click the first valid option meeting your target seats
-    results_page.select_first_valid_train(class_filter, min_threshold)
-    logger.info("Valid train selected! Redirecting to checkout dashboard details...")
+        # APPLYING AVAILABLE ONLY FILTER AND THE OTHER GIVEN FILTER
+        results_page.apply_available_only_filter()
+        results_page.apply_dynamic_class_filter(class_filter)
 
-    # =========================================================================
+        # COUNTING AND ASSERTING THAT THERE ARE TRAINS STILL PRESENT
+        train_count = results_page.get_visible_train_count()
+        assert train_count > 0, f"Mismatch! Found Zero trains matching the class filter{class_filter}"
+        logger.info(f"Filters verified successfully! Train count: {train_count}")
+
+        # SCAN THE TRAIN CARD LIST AND CLICK THE FIRST VALID OPTION MEETING YOUR TARGET SEATS
+        results_page.select_first_valid_train(class_filter, min_seats)
+        logger.info("Valid train selected! Redirecting to checkout dashboard details...")
+
     # STEP 3: TRAVELLER REGISTRATION AND DATA-ENTRY VALIDATION
-    # =========================================================================
-    logger.info("Arrived at Checkout Details Form view. Attaching profile credentials...")
+    with allure.step("Step 3: Fill Passenger Registration and Contact Channels"):
+        logger.info("Arrived at Checkout Details Form view. Attaching profile credentials...")
 
-    # Pull data row dynamically from Sheet 3
-    passenger_data = ExcelReader.read_excel("booking_data.xlsx", "PassengerDetails")[0]
+        homepage.popup_close()
+        # ENTER AND VALIDATING IRCTC ID
+        details_page.enter_irctc_id(pass_id)
+        logger.info("IRCTC Username applied.")
 
-    details_page.enter_irctc_id("priyanshu4902")
-    logger.info("IRCTC Username applied.")
+        # FILLING THE PASSENGER DETAILS AS NAME, AGE, GENDER, PREFERRED MEAL OPTION
+        logger.info("Opening Passenger Registration modal view...")
+        details_page.fill_passenger_details(pass_name, pass_age, pass_gender, meal)
+        assert details_page.is_passenger_added_successfully(pass_name),f"Registration Failure! Passenger '{pass_name}'was not successfully added to the checkout layout list."
 
-    logger.info("Opening Passenger Registration modal view...")
-    details_page.fill_passenger_details(
-        name=passenger_data['FullName'],
-        age=int(passenger_data['Age']),
-        gender=passenger_data['Gender'],
-        meal=passenger_data['MealOption']
-    )
+        logger.info("Configuring contact channels and disabling default insurance flags...")
 
-    logger.info("Configuring contact channels and disabling default insurance flags...")
-    details_page.wait_for_modal_to_settle()
-    time.sleep(0.5)
-    details_page.scroll_to_element()
-    time.sleep(0.5)
-    details_page.select_cancellation_addon()
-    time.sleep(1)
+        # SCROLLING DOWN AND FINALISING DETAILS
+        details_page.scroll_to_element()
+        details_page.select_cancellation_addon()
+        details_page.wait.until(EC.visibility_of_element_located(details_page.CONTACT_NUMBER_INPUT))
 
-    # DYNAMIC CONTACT CHANNELS FROM EXCEL SHEET 3
-    details_page.fill_contact_information(
-        mobile=str(int(float(passenger_data['ContactMobile']))),  # Sanitizes numbers from Excel
-        email=passenger_data['ContactEmail']
-    )
-    time.sleep(1.5)
-    details_page.click_proceed_to_payment()
+        # FILLING PASSENGER CONTACT AND EMAIL DETAILS
+        details_page.fill_contact_information(pass_mobile, pass_email)
 
-    # =========================================================================
+        details_page.wait.until(EC.element_to_be_clickable(details_page.PROCEED_TO_PAYMENT_BUTTON))
+
+        # PROCEEDING TO PAYMENT PAGE
+        details_page.click_proceed_to_payment()
+
     # STEP 4: PAYMENT GATEWAY PROCESSING
-    # =========================================================================
-    logger.info("Arrived at payment gateway page view. Extracting test card details from Sheet 4...")
-    time.sleep(2)  # Give the payment page UI text a moment to fully render
+    with allure.step("Step 4: Verify Payment Gateway Landing and Input Card Details"):
+            logger.info("Arrived at payment gateway page view. Extracting test card details from Sheet 4...")
 
-    # Extract the single row data from Sheet 4
-    card_data = ExcelReader.read_excel("booking_data.xlsx", "PaymentDetails")[0]
+            homepage.popup_close()
 
-    # If the UI has a combined MM/YY field, construct it dynamically
+            payment_tab_visible = payment_page.wait.until(EC.element_to_be_clickable(payment_page.CREDIT_CARD_TAB))
+            assert payment_tab_visible.is_displayed(), (
+                f"Gateway Blockage! Payment terminal page layer failed to render. Current URL: {driver.current_url}"
+            )
+            logger.info("Payment terminal container verified. Extracting card profiles...")
 
-    # Clean and format Month data (ensures 2 digits, like turning '5' into '05')
-    clean_month = str(int(float(card_data['ExpiryMonth']))).zfill(2)
+            # CLEAN AND FORMAT MONTH DATA (ENSURES 2 DIGITS, LIKE TURNING '5' INTO '05')
+            clean_expiry_month = str(int(float(exp_month))).zfill(2)
 
-    # Clean and format Year data
-    raw_year = str(int(float(card_data['ExpiryYear'])))
+            # CLEAN AND FORMAT YEAR DATA
+            raw_year = str(int(float(exp_year)))
 
-    # Fallback: If Excel has a 2-digit year (e.g., '30'), convert it to 4-digits ('2030') to match the input value attribute
-    if len(raw_year) == 2:
-        clean_year = f"20{raw_year}"
-    else:
-        clean_year = raw_year
+            # FALLBACK: IF EXCEL HAS A 2-DIGIT YEAR (E.G., '30'), CONVERT IT TO 4-DIGITS ('2030')
+            if len(raw_year) == 2:
+                clean_expiry_year = f"20{raw_year}"
+            else:
+                clean_expiry_year = raw_year
 
-    time.sleep(1)
-    # Send clean data to your Payment Page Object
-    payment_page.fill_card_details(
-        card_no=str(int(float(card_data['CardNumber']))),
-        exp_month=clean_month,
-        exp_year=clean_year,
-        cvv=str(int(card_data['CVV'])),
-        card_name=str(card_data['CardName'])
-    )
-
-    # Optional: Click final payment confirmation button if you want to test the full loop
-    # payment_page.click_pay_now()
-
+            # SEND CLEAN DATA TO PAYMENT PAGE OBJECT
+            payment_page.fill_card_details(card_no, clean_expiry_month, clean_expiry_year, cvv, card_name)
+            logger.info("Card profile arrays typed. Evaluating field compliance...")

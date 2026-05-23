@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Capstone_Goibibo_Flights.iml" filepath="$PROJECT_DIR$/.idea/Capstone_Goibibo_Flights.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Capstone_Goibibo_Trains_Selenium_Pytest.iml" filepath="$PROJECT_DIR$/.idea/Capstone_Goibibo_Trains_Selenium_Pytest.iml" />
     </modules>
   </component>
 </project>

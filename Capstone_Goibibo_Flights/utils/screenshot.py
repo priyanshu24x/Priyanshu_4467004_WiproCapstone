@@ -1,5 +1,6 @@
-# Captures screenshots and saves them to reports/screenshots/ with unique timestamps.
-
+# ===========================================================
+# IMPORTS
+# ===========================================================
 import os
 from datetime import datetime
 import allure  # Added for Allure Report Integration
@@ -7,6 +8,9 @@ from utils.logger import LogGen
 
 logger = LogGen.loggen()
 
+# ===========================================================
+# SCREENSHOTS
+# ===========================================================
 class ScreenshotUtil:
 
     @staticmethod
