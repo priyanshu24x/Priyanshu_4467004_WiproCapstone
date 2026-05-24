@@ -1,0 +1,27 @@
+[32mINFO    [0m root:test_cases.py:106 STARTING EXECUTION: Test 4 - Sort by Departure Time Chronology
+[32mINFO    [0m root:homepage.py:51 closing popup
+[32mINFO    [0m root:homepage.py:62 Opening Source input view and typing: {source_station_code}
+[32mINFO    [0m root:homepage.py:250 Source entered
+[32mINFO    [0m root:homepage.py:251 Source suggestion selected
+[32mINFO    [0m root:homepage.py:86 Opening Destination input view and typing: {destination_station_code}
+[32mINFO    [0m root:homepage.py:254 Destination entered
+[32mINFO    [0m root:homepage.py:255 Destination suggestion selected
+[32mINFO    [0m root:homepage.py:129 Waiting for calendar popup
+[32mINFO    [0m root:homepage.py:142 Looking for: June 2026
+[32mINFO    [0m root:homepage.py:143 Looking for day: 26
+[32mINFO    [0m root:homepage.py:149 Calendar attempt: 1
+[32mINFO    [0m root:homepage.py:161 Visible months: ['May 2026', 'June 2026']
+[32mINFO    [0m root:homepage.py:165 Target month found: June 2026
+[32mINFO    [0m root:homepage.py:209 Clicking day: 26
+[32mINFO    [0m root:homepage.py:222 Date selected: June 2026 26
+[32mINFO    [0m root:homepage.py:258 Date selected
+[32mINFO    [0m root:homepage.py:234 Clicking search button
+[32mINFO    [0m root:homepage.py:239 Search clicked
+[32mINFO    [0m root:homepage.py:261 Search submitted
+[32mINFO    [0m root:results_page.py:241 Opening sort dropdown menu to select: 'Departure'
+[32mINFO    [0m root:results_page.py:249 Targeting formatted option XPath structure: //li[contains(@class, 'srtdBy__ddCntItm')]//span[text()='Departure']/ancestor::li
+[32mINFO    [0m root:results_page.py:253 Successfully triggered selection choice parameter for: 'Departure'
+[32mINFO    [0m root:results_page.py:269 Validating time sequence. Target departure? True | Expect Ascending? True
+[32mINFO    [0m root:results_page.py:300 Generated timeline list minutes: [60, 176, 265, 284]
+[32mINFO    [0m root:results_page.py:305 Ascending sort verified: [60, 176, 265, 284]
+[32mINFO    [0m root:test_cases.py:114 SUCCESS: Test 4 Passed.

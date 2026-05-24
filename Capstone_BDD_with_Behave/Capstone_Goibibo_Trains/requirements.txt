@@ -1,0 +1,5 @@
+selenium
+webdriver-manager
+behave
+allure-behave
+allure-python-commons

@@ -1,0 +1,264 @@
+2026-05-24 13:31:01,876 - root - INFO - BDD Behave Allure framework initialized
+2026-05-24 13:31:01,919 - root - INFO - ========================================
+2026-05-24 13:31:01,919 - root - INFO - STARTING SCENARIO: Coach class filter shows matching train classes -- @1.1 
+2026-05-24 13:31:13,517 - root - INFO - Browser launched: edge; base url: https://www.goibibo.com/trains/
+2026-05-24 13:31:13,519 - root - INFO - closing popup
+2026-05-24 13:31:13,605 - root - INFO - Goibibo train page is ready
+2026-05-24 13:31:13,606 - root - INFO - closing popup
+2026-05-24 13:31:13,614 - root - INFO - Opening Source input view and typing: {source_station_code}
+2026-05-24 13:31:15,920 - root - INFO - Opening Destination input view and typing: {destination_station_code}
+2026-05-24 13:31:17,645 - root - INFO - Waiting for calendar popup
+2026-05-24 13:31:17,661 - root - INFO - Looking for: June 2026
+2026-05-24 13:31:17,661 - root - INFO - Looking for day: 26
+2026-05-24 13:31:17,661 - root - INFO - Calendar attempt: 1
+2026-05-24 13:31:17,757 - root - INFO - Visible months: ['May 2026', 'June 2026']
+2026-05-24 13:31:17,758 - root - INFO - Target month found: June 2026
+2026-05-24 13:31:17,758 - root - INFO - Clicking day: 26
+2026-05-24 13:31:17,802 - root - INFO - Date selected: June 2026 26
+2026-05-24 13:31:17,949 - root - INFO - Clicking search button
+2026-05-24 13:31:18,055 - root - INFO - Search clicked
+2026-05-24 13:31:19,574 - root - INFO - Applying left sidebar filter: '3A - AC 3 Tier Sleeper'...
+2026-05-24 13:31:20,240 - root - INFO - Verifying that visible train cards show option: 3A
+2026-05-24 13:31:20,298 - root - INFO - Card 1 verified: 3A
+2026-05-24 13:31:20,309 - root - INFO - Card 2 verified: 3A
+2026-05-24 13:31:20,318 - root - INFO - Card 3 verified: 3A
+2026-05-24 13:31:20,319 - root - INFO - SCENARIO STATUS: Status.passed
+2026-05-24 13:31:20,454 - root - INFO - Screenshot saved to reports/screenshots/PASSED_SCENARIO_Coach_class_filter_shows_matching_train_classes_--_@1.1__20260524-133120.png
+2026-05-24 13:31:20,459 - root - INFO - Successfully embedded 'PASSED_SCENARIO_Coach_class_filter_shows_matching_train_classes_--_@1.1_' into Allure timeline tracker.
+2026-05-24 13:31:22,978 - root - INFO - Browser closed
+2026-05-24 13:31:22,978 - root - INFO - ========================================
+2026-05-24 13:31:22,984 - root - INFO - ========================================
+2026-05-24 13:31:22,984 - root - INFO - STARTING SCENARIO: Departure time filter keeps trains inside the selected window -- @1.1 
+2026-05-24 13:31:26,396 - root - INFO - Browser launched: edge; base url: https://www.goibibo.com/trains/
+2026-05-24 13:31:26,397 - root - INFO - closing popup
+2026-05-24 13:31:26,416 - root - INFO - Goibibo train page is ready
+2026-05-24 13:31:26,417 - root - INFO - closing popup
+2026-05-24 13:31:26,426 - root - INFO - Opening Source input view and typing: {source_station_code}
+2026-05-24 13:31:28,830 - root - INFO - Opening Destination input view and typing: {destination_station_code}
+2026-05-24 13:31:30,556 - root - INFO - Waiting for calendar popup
+2026-05-24 13:31:30,595 - root - INFO - Looking for: June 2026
+2026-05-24 13:31:30,595 - root - INFO - Looking for day: 26
+2026-05-24 13:31:30,595 - root - INFO - Calendar attempt: 1
+2026-05-24 13:31:30,689 - root - INFO - Visible months: ['May 2026', 'June 2026']
+2026-05-24 13:31:30,689 - root - INFO - Target month found: June 2026
+2026-05-24 13:31:30,689 - root - INFO - Clicking day: 26
+2026-05-24 13:31:30,743 - root - INFO - Date selected: June 2026 26
+2026-05-24 13:31:30,887 - root - INFO - Clicking search button
+2026-05-24 13:31:31,008 - root - INFO - Search clicked
+2026-05-24 13:31:31,802 - root - INFO - Applying time filter checkbox matching: 'Afternoon'
+2026-05-24 13:31:32,583 - root - INFO - Verifying departure hours range window: 12 to 18
+2026-05-24 13:31:32,635 - root - INFO - Extracted departure hours for validation: [14, 15, 13, 13]
+2026-05-24 13:31:32,635 - root - INFO - SCENARIO STATUS: Status.passed
+2026-05-24 13:31:32,791 - root - INFO - Screenshot saved to reports/screenshots/PASSED_SCENARIO_Departure_time_filter_keeps_trains_inside_the_selected_window_--_@1.1__20260524-133132.png
+2026-05-24 13:31:32,793 - root - INFO - Successfully embedded 'PASSED_SCENARIO_Departure_time_filter_keeps_trains_inside_the_selected_window_--_@1.1_' into Allure timeline tracker.
+2026-05-24 13:31:35,614 - root - INFO - Browser closed
+2026-05-24 13:31:35,614 - root - INFO - ========================================
+2026-05-24 13:31:35,616 - root - INFO - ========================================
+2026-05-24 13:31:35,616 - root - INFO - STARTING SCENARIO: Departure station filter shows trains from the selected station -- @1.1 
+2026-05-24 13:31:40,589 - root - INFO - Browser launched: edge; base url: https://www.goibibo.com/trains/
+2026-05-24 13:31:40,591 - root - INFO - closing popup
+2026-05-24 13:31:40,649 - root - INFO - Goibibo train page is ready
+2026-05-24 13:31:40,650 - root - INFO - closing popup
+2026-05-24 13:31:41,097 - root - INFO - Opening Source input view and typing: {source_station_code}
+2026-05-24 13:31:42,820 - root - INFO - Opening Destination input view and typing: {destination_station_code}
+2026-05-24 13:31:44,453 - root - INFO - Waiting for calendar popup
+2026-05-24 13:31:44,472 - root - INFO - Looking for: June 2026
+2026-05-24 13:31:44,472 - root - INFO - Looking for day: 26
+2026-05-24 13:31:44,472 - root - INFO - Calendar attempt: 1
+2026-05-24 13:31:44,531 - root - INFO - Visible months: ['May 2026', 'June 2026']
+2026-05-24 13:31:44,531 - root - INFO - Target month found: June 2026
+2026-05-24 13:31:44,531 - root - INFO - Clicking day: 26
+2026-05-24 13:31:44,594 - root - INFO - Date selected: June 2026 26
+2026-05-24 13:31:44,727 - root - INFO - Clicking search button
+2026-05-24 13:31:44,827 - root - INFO - Search clicked
+2026-05-24 13:31:45,683 - root - INFO - Applying station filter checkbox matching: 'NZM - H Nizamuddin'
+2026-05-24 13:31:46,124 - root - INFO - Verifying departure station matches: 'NZM'
+2026-05-24 13:31:46,140 - root - INFO - Card 1 parsed station tag code: 'NZM'
+2026-05-24 13:31:46,149 - root - INFO - Card 2 parsed station tag code: 'NZM'
+2026-05-24 13:31:46,155 - root - INFO - Card 3 parsed station tag code: 'NZM'
+2026-05-24 13:31:46,156 - root - INFO - SCENARIO STATUS: Status.passed
+2026-05-24 13:31:46,355 - root - INFO - Screenshot saved to reports/screenshots/PASSED_SCENARIO_Departure_station_filter_shows_trains_from_the_selected_station_--_@1.1__20260524-133146.png
+2026-05-24 13:31:46,358 - root - INFO - Successfully embedded 'PASSED_SCENARIO_Departure_station_filter_shows_trains_from_the_selected_station_--_@1.1_' into Allure timeline tracker.
+2026-05-24 13:31:48,678 - root - INFO - Browser closed
+2026-05-24 13:31:48,679 - root - INFO - ========================================
+2026-05-24 13:31:48,682 - root - INFO - ========================================
+2026-05-24 13:31:48,682 - root - INFO - STARTING SCENARIO: Train results can be sorted by departure time -- @1.1 
+2026-05-24 13:31:49,929 - root - INFO - Browser launched: edge; base url: https://www.goibibo.com/trains/
+2026-05-24 13:31:49,930 - root - INFO - closing popup
+2026-05-24 13:31:51,504 - root - INFO - Goibibo train page is ready
+2026-05-24 13:31:51,506 - root - INFO - closing popup
+2026-05-24 13:31:51,571 - root - INFO - Opening Source input view and typing: {source_station_code}
+2026-05-24 13:31:53,440 - root - INFO - Opening Destination input view and typing: {destination_station_code}
+2026-05-24 13:31:55,229 - root - INFO - Waiting for calendar popup
+2026-05-24 13:31:55,245 - root - INFO - Looking for: June 2026
+2026-05-24 13:31:55,245 - root - INFO - Looking for day: 26
+2026-05-24 13:31:55,245 - root - INFO - Calendar attempt: 1
+2026-05-24 13:31:55,297 - root - INFO - Visible months: ['May 2026', 'June 2026']
+2026-05-24 13:31:55,297 - root - INFO - Target month found: June 2026
+2026-05-24 13:31:55,297 - root - INFO - Clicking day: 26
+2026-05-24 13:31:55,348 - root - INFO - Date selected: June 2026 26
+2026-05-24 13:31:55,492 - root - INFO - Clicking search button
+2026-05-24 13:31:55,586 - root - INFO - Search clicked
+2026-05-24 13:31:56,582 - root - INFO - Opening sort dropdown menu to select: 'Departure'
+2026-05-24 13:31:56,910 - root - INFO - Targeting formatted option XPath structure: //li[contains(@class, 'srtdBy__ddCntItm')]//span[text()='Departure']/ancestor::li
+2026-05-24 13:31:56,950 - root - INFO - Successfully triggered selection choice parameter for: 'Departure'
+2026-05-24 13:31:57,810 - root - INFO - Validating time sequence. Target departure? True | Expect Ascending? True
+2026-05-24 13:31:59,071 - root - INFO - Generated timeline list minutes: [60, 176, 265, 284]
+2026-05-24 13:31:59,072 - root - INFO - Ascending sort verified: [60, 176, 265, 284]
+2026-05-24 13:31:59,072 - root - INFO - SCENARIO STATUS: Status.passed
+2026-05-24 13:31:59,192 - root - INFO - Screenshot saved to reports/screenshots/PASSED_SCENARIO_Train_results_can_be_sorted_by_departure_time_--_@1.1__20260524-133159.png
+2026-05-24 13:31:59,194 - root - INFO - Successfully embedded 'PASSED_SCENARIO_Train_results_can_be_sorted_by_departure_time_--_@1.1_' into Allure timeline tracker.
+2026-05-24 13:32:01,494 - root - INFO - Browser closed
+2026-05-24 13:32:01,494 - root - INFO - ========================================
+2026-05-24 13:32:01,505 - root - INFO - ========================================
+2026-05-24 13:32:01,505 - root - INFO - STARTING SCENARIO: Train results can be sorted by arrival time -- @1.1 
+2026-05-24 13:32:07,104 - root - INFO - Browser launched: edge; base url: https://www.goibibo.com/trains/
+2026-05-24 13:32:07,105 - root - INFO - closing popup
+2026-05-24 13:32:07,129 - root - INFO - Goibibo train page is ready
+2026-05-24 13:32:07,129 - root - INFO - closing popup
+2026-05-24 13:32:07,136 - root - INFO - Opening Source input view and typing: {source_station_code}
+2026-05-24 13:32:09,155 - root - INFO - Opening Destination input view and typing: {destination_station_code}
+2026-05-24 13:32:10,832 - root - INFO - Waiting for calendar popup
+2026-05-24 13:32:10,849 - root - INFO - Looking for: June 2026
+2026-05-24 13:32:10,849 - root - INFO - Looking for day: 26
+2026-05-24 13:32:10,849 - root - INFO - Calendar attempt: 1
+2026-05-24 13:32:10,934 - root - INFO - Visible months: ['May 2026', 'June 2026']
+2026-05-24 13:32:10,934 - root - INFO - Target month found: June 2026
+2026-05-24 13:32:10,934 - root - INFO - Clicking day: 26
+2026-05-24 13:32:10,974 - root - INFO - Date selected: June 2026 26
+2026-05-24 13:32:11,115 - root - INFO - Clicking search button
+2026-05-24 13:32:11,212 - root - INFO - Search clicked
+2026-05-24 13:32:12,378 - root - INFO - Opening sort dropdown menu to select: 'Arrival'
+2026-05-24 13:32:12,712 - root - INFO - Targeting formatted option XPath structure: //li[contains(@class, 'srtdBy__ddCntItm')]//span[text()='Arrival']/ancestor::li
+2026-05-24 13:32:12,807 - root - INFO - Successfully triggered selection choice parameter for: 'Arrival'
+2026-05-24 13:32:13,749 - root - INFO - Validating time sequence. Target departure? False | Expect Ascending? True
+2026-05-24 13:32:15,016 - root - INFO - Generated timeline list minutes: [8, 28, 50, 70]
+2026-05-24 13:32:15,016 - root - INFO - Ascending sort verified: [8, 28, 50, 70]
+2026-05-24 13:32:15,016 - root - INFO - SCENARIO STATUS: Status.passed
+2026-05-24 13:32:15,116 - root - INFO - Screenshot saved to reports/screenshots/PASSED_SCENARIO_Train_results_can_be_sorted_by_arrival_time_--_@1.1__20260524-133215.png
+2026-05-24 13:32:15,117 - root - INFO - Successfully embedded 'PASSED_SCENARIO_Train_results_can_be_sorted_by_arrival_time_--_@1.1_' into Allure timeline tracker.
+2026-05-24 13:32:17,429 - root - INFO - Browser closed
+2026-05-24 13:32:17,429 - root - INFO - ========================================
+2026-05-24 13:32:17,432 - root - INFO - ========================================
+2026-05-24 13:32:17,432 - root - INFO - STARTING SCENARIO: Booking outside allowed window shows validation message -- @1.1 
+2026-05-24 13:32:22,246 - root - INFO - Browser launched: edge; base url: https://www.goibibo.com/trains/
+2026-05-24 13:32:22,248 - root - INFO - closing popup
+2026-05-24 13:32:22,270 - root - INFO - Goibibo train page is ready
+2026-05-24 13:32:22,270 - root - INFO - closing popup
+2026-05-24 13:32:22,278 - root - INFO - Opening Source input view and typing: {source_station_code}
+2026-05-24 13:32:24,199 - root - INFO - Opening Destination input view and typing: {destination_station_code}
+2026-05-24 13:32:26,080 - root - INFO - Waiting for calendar popup
+2026-05-24 13:32:26,099 - root - INFO - Looking for: September 2026
+2026-05-24 13:32:26,099 - root - INFO - Looking for day: 20
+2026-05-24 13:32:26,100 - root - INFO - Calendar attempt: 1
+2026-05-24 13:32:26,186 - root - INFO - Visible months: ['May 2026', 'June 2026']
+2026-05-24 13:32:26,186 - root - INFO - Clicking next month arrow
+2026-05-24 13:32:26,896 - root - INFO - Calendar attempt: 2
+2026-05-24 13:32:26,963 - root - INFO - Visible months: ['July 2026', 'August 2026']
+2026-05-24 13:32:26,963 - root - INFO - Clicking next month arrow
+2026-05-24 13:32:27,217 - root - INFO - Calendar attempt: 3
+2026-05-24 13:32:27,293 - root - INFO - Visible months: ['July 2026', 'August 2026', 'September 2026']
+2026-05-24 13:32:27,293 - root - INFO - Target month found: September 2026
+2026-05-24 13:32:27,293 - root - INFO - Clicking day: 20
+2026-05-24 13:32:27,348 - root - INFO - Date selected: September 2026 20
+2026-05-24 13:32:27,504 - root - INFO - Clicking search button
+2026-05-24 13:32:27,662 - root - INFO - Search clicked
+2026-05-24 13:32:27,664 - root - INFO - Checking for booking not open error message
+2026-05-24 13:32:27,987 - root - INFO - Booking not open error message found
+2026-05-24 13:32:28,152 - root - INFO - SCENARIO STATUS: Status.passed
+2026-05-24 13:32:28,294 - root - INFO - Screenshot saved to reports/screenshots/PASSED_SCENARIO_Booking_outside_allowed_window_shows_validation_message_--_@1.1__20260524-133228.png
+2026-05-24 13:32:28,296 - root - INFO - Successfully embedded 'PASSED_SCENARIO_Booking_outside_allowed_window_shows_validation_message_--_@1.1_' into Allure timeline tracker.
+2026-05-24 13:32:30,628 - root - INFO - Browser closed
+2026-05-24 13:32:30,628 - root - INFO - ========================================
+2026-05-24 13:32:30,638 - root - INFO - ========================================
+2026-05-24 13:32:30,638 - root - INFO - STARTING SCENARIO: Routes with no direct trains show a no trains message -- @1.1 
+2026-05-24 13:32:36,334 - root - INFO - Browser launched: edge; base url: https://www.goibibo.com/trains/
+2026-05-24 13:32:36,335 - root - INFO - closing popup
+2026-05-24 13:32:36,400 - root - INFO - Goibibo train page is ready
+2026-05-24 13:32:36,400 - root - INFO - closing popup
+2026-05-24 13:32:36,641 - root - INFO - Opening Source input view and typing: {source_station_code}
+2026-05-24 13:32:38,344 - root - INFO - Opening Destination input view and typing: {destination_station_code}
+2026-05-24 13:32:40,071 - root - INFO - Waiting for calendar popup
+2026-05-24 13:32:40,086 - root - INFO - Looking for: June 2026
+2026-05-24 13:32:40,086 - root - INFO - Looking for day: 26
+2026-05-24 13:32:40,086 - root - INFO - Calendar attempt: 1
+2026-05-24 13:32:40,138 - root - INFO - Visible months: ['May 2026', 'June 2026']
+2026-05-24 13:32:40,138 - root - INFO - Target month found: June 2026
+2026-05-24 13:32:40,138 - root - INFO - Clicking day: 26
+2026-05-24 13:32:40,174 - root - INFO - Date selected: June 2026 26
+2026-05-24 13:32:40,323 - root - INFO - Clicking search button
+2026-05-24 13:32:40,456 - root - INFO - Search clicked
+2026-05-24 13:32:40,456 - root - INFO - Checking for no trains found error message
+2026-05-24 13:32:40,901 - root - INFO - No trains error message visible
+2026-05-24 13:32:41,081 - root - INFO - SCENARIO STATUS: Status.passed
+2026-05-24 13:32:41,232 - root - INFO - Screenshot saved to reports/screenshots/PASSED_SCENARIO_Routes_with_no_direct_trains_show_a_no_trains_message_--_@1.1__20260524-133241.png
+2026-05-24 13:32:41,236 - root - INFO - Successfully embedded 'PASSED_SCENARIO_Routes_with_no_direct_trains_show_a_no_trains_message_--_@1.1_' into Allure timeline tracker.
+2026-05-24 13:32:43,538 - root - INFO - Browser closed
+2026-05-24 13:32:43,538 - root - INFO - ========================================
+2026-05-24 13:32:43,545 - root - INFO - ========================================
+2026-05-24 13:32:43,545 - root - INFO - STARTING SCENARIO: Routes with no direct trains show a no trains message -- @1.2 
+2026-05-24 13:32:46,753 - root - INFO - Browser launched: edge; base url: https://www.goibibo.com/trains/
+2026-05-24 13:32:46,755 - root - INFO - closing popup
+2026-05-24 13:32:46,780 - root - INFO - Goibibo train page is ready
+2026-05-24 13:32:46,782 - root - INFO - closing popup
+2026-05-24 13:32:46,792 - root - INFO - Opening Source input view and typing: {source_station_code}
+2026-05-24 13:32:48,641 - root - INFO - Opening Destination input view and typing: {destination_station_code}
+2026-05-24 13:32:50,382 - root - INFO - Waiting for calendar popup
+2026-05-24 13:32:50,395 - root - INFO - Looking for: June 2026
+2026-05-24 13:32:50,395 - root - INFO - Looking for day: 26
+2026-05-24 13:32:50,395 - root - INFO - Calendar attempt: 1
+2026-05-24 13:32:50,459 - root - INFO - Visible months: ['May 2026', 'June 2026']
+2026-05-24 13:32:50,459 - root - INFO - Target month found: June 2026
+2026-05-24 13:32:50,459 - root - INFO - Clicking day: 26
+2026-05-24 13:32:50,523 - root - INFO - Date selected: June 2026 26
+2026-05-24 13:32:50,671 - root - INFO - Clicking search button
+2026-05-24 13:32:50,787 - root - INFO - Search clicked
+2026-05-24 13:32:50,789 - root - INFO - Checking for no trains found error message
+2026-05-24 13:32:51,345 - root - INFO - No trains error message visible
+2026-05-24 13:32:51,498 - root - INFO - SCENARIO STATUS: Status.passed
+2026-05-24 13:32:51,648 - root - INFO - Screenshot saved to reports/screenshots/PASSED_SCENARIO_Routes_with_no_direct_trains_show_a_no_trains_message_--_@1.2__20260524-133251.png
+2026-05-24 13:32:51,650 - root - INFO - Successfully embedded 'PASSED_SCENARIO_Routes_with_no_direct_trains_show_a_no_trains_message_--_@1.2_' into Allure timeline tracker.
+2026-05-24 13:32:53,970 - root - INFO - Browser closed
+2026-05-24 13:32:53,970 - root - INFO - ========================================
+2026-05-24 13:32:53,977 - root - INFO - ========================================
+2026-05-24 13:32:53,977 - root - INFO - STARTING SCENARIO: Complete train booking flow reaches payment form -- @1.1 
+2026-05-24 13:32:57,191 - root - INFO - Browser launched: edge; base url: https://www.goibibo.com/trains/
+2026-05-24 13:32:57,191 - root - INFO - closing popup
+2026-05-24 13:32:57,201 - root - INFO - Goibibo train page is ready
+2026-05-24 13:32:57,201 - root - INFO - closing popup
+2026-05-24 13:32:57,213 - root - INFO - Opening Source input view and typing: {source_station_code}
+2026-05-24 13:32:59,115 - root - INFO - Opening Destination input view and typing: {destination_station_code}
+2026-05-24 13:33:00,832 - root - INFO - Waiting for calendar popup
+2026-05-24 13:33:00,846 - root - INFO - Looking for: June 2026
+2026-05-24 13:33:00,846 - root - INFO - Looking for day: 26
+2026-05-24 13:33:00,846 - root - INFO - Calendar attempt: 1
+2026-05-24 13:33:00,924 - root - INFO - Visible months: ['May 2026', 'June 2026']
+2026-05-24 13:33:00,925 - root - INFO - Target month found: June 2026
+2026-05-24 13:33:00,925 - root - INFO - Clicking day: 26
+2026-05-24 13:33:00,967 - root - INFO - Date selected: June 2026 26
+2026-05-24 13:33:01,088 - root - INFO - Clicking search button
+2026-05-24 13:33:01,202 - root - INFO - Search clicked
+2026-05-24 13:33:02,547 - root - INFO - Engaging 'Show available only' filter to hide waitlisted blocks...
+2026-05-24 13:33:03,449 - root - INFO - Applying left sidebar filter: '2A'...
+2026-05-24 13:33:04,228 - root - INFO - Scanning active train cards for '2A' availability >= 5...
+2026-05-24 13:33:04,579 - root - INFO - Inspecting block text: 'AVL 92'
+2026-05-24 13:33:04,581 - root - INFO - Checking train card: Found 92 seats available.
+2026-05-24 13:33:04,581 - root - INFO - Threshold met! Selecting train with 92 seats.
+2026-05-24 13:33:04,973 - root - INFO - closing popup
+2026-05-24 13:33:05,046 - root - INFO - Checking if a pre-existing IRCTC session needs to be reset...
+2026-05-24 13:33:10,061 - root - INFO - Interacting with credential fields -> Typing: priyanshu4902
+2026-05-24 13:33:15,439 - root - INFO - Opening Passenger Registration modal view for John Doe...
+2026-05-24 13:33:16,036 - root - INFO - Selecting meal option: Veg
+2026-05-24 13:33:16,114 - root - INFO - Meal selected: Veg
+2026-05-24 13:33:16,455 - root - INFO - Applying transition pause for passenger layout settlement...
+2026-05-24 13:33:16,692 - root - INFO - Selecting Cancellation Addon preferences naturally...
+2026-05-24 13:33:16,747 - root - INFO - Filling contact details input nodes...
+2026-05-24 13:33:17,457 - root - INFO - Proceeding to secure checkout payment page gateway...
+2026-05-24 13:33:17,574 - root - INFO - closing popup
+2026-05-24 13:33:21,352 - root - INFO - Awaiting payment layout view stabilization and selecting Card Tab...
+2026-05-24 13:33:26,925 - root - INFO - Populating fields with dynamic card parameters from spreadsheet source...
+2026-05-24 13:33:27,168 - root - INFO - Opening month dropdown list to pick option: 12
+2026-05-24 13:33:27,378 - root - INFO - Opening year dropdown list to pick option: 2030
+2026-05-24 13:33:28,731 - root - INFO - SCENARIO STATUS: Status.passed
+2026-05-24 13:33:28,862 - root - INFO - Screenshot saved to reports/screenshots/PASSED_SCENARIO_Complete_train_booking_flow_reaches_payment_form_--_@1.1__20260524-133328.png
+2026-05-24 13:33:28,867 - root - INFO - Successfully embedded 'PASSED_SCENARIO_Complete_train_booking_flow_reaches_payment_form_--_@1.1_' into Allure timeline tracker.

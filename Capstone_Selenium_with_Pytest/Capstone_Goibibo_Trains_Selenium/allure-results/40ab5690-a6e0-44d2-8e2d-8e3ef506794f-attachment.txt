@@ -1,0 +1,25 @@
+[32mINFO    [0m root:test_cases.py:161 STARTING EXECUTION: Test Neg 2 - Empty Route Validation
+[32mINFO    [0m root:test_cases.py:163 Testing random route: CAPE to BRML
+[32mINFO    [0m root:homepage.py:36 Opening Goibibo trains page
+[32mINFO    [0m root:homepage.py:51 closing popup
+[32mINFO    [0m root:homepage.py:62 Opening Source input view and typing: {source_station_code}
+[32mINFO    [0m root:homepage.py:250 Source entered
+[32mINFO    [0m root:homepage.py:251 Source suggestion selected
+[32mINFO    [0m root:homepage.py:86 Opening Destination input view and typing: {destination_station_code}
+[32mINFO    [0m root:homepage.py:254 Destination entered
+[32mINFO    [0m root:homepage.py:255 Destination suggestion selected
+[32mINFO    [0m root:homepage.py:129 Waiting for calendar popup
+[32mINFO    [0m root:homepage.py:142 Looking for: June 2026
+[32mINFO    [0m root:homepage.py:143 Looking for day: 26
+[32mINFO    [0m root:homepage.py:149 Calendar attempt: 1
+[32mINFO    [0m root:homepage.py:161 Visible months: ['May 2026', 'June 2026']
+[32mINFO    [0m root:homepage.py:165 Target month found: June 2026
+[32mINFO    [0m root:homepage.py:209 Clicking day: 26
+[32mINFO    [0m root:homepage.py:222 Date selected: June 2026 26
+[32mINFO    [0m root:homepage.py:258 Date selected
+[32mINFO    [0m root:homepage.py:234 Clicking search button
+[32mINFO    [0m root:homepage.py:239 Search clicked
+[32mINFO    [0m root:homepage.py:261 Search submitted
+[32mINFO    [0m root:results_page.py:336 Checking for no trains found error message
+[32mINFO    [0m root:results_page.py:339 No trains error message visible
+[32mINFO    [0m root:test_cases.py:177 SUCCESS: Test Neg 2 Passed for Kanyakumari to Baramula
