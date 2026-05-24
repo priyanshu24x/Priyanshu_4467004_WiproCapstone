@@ -1,0 +1,27 @@
+2026-05-24 13:31:01,876 - root - INFO - BDD Behave Allure framework initialized
+2026-05-24 13:31:01,919 - root - INFO - ========================================
+2026-05-24 13:31:01,919 - root - INFO - STARTING SCENARIO: Coach class filter shows matching train classes -- @1.1 
+2026-05-24 13:31:13,517 - root - INFO - Browser launched: edge; base url: https://www.goibibo.com/trains/
+2026-05-24 13:31:13,519 - root - INFO - closing popup
+2026-05-24 13:31:13,605 - root - INFO - Goibibo train page is ready
+2026-05-24 13:31:13,606 - root - INFO - closing popup
+2026-05-24 13:31:13,614 - root - INFO - Opening Source input view and typing: {source_station_code}
+2026-05-24 13:31:15,920 - root - INFO - Opening Destination input view and typing: {destination_station_code}
+2026-05-24 13:31:17,645 - root - INFO - Waiting for calendar popup
+2026-05-24 13:31:17,661 - root - INFO - Looking for: June 2026
+2026-05-24 13:31:17,661 - root - INFO - Looking for day: 26
+2026-05-24 13:31:17,661 - root - INFO - Calendar attempt: 1
+2026-05-24 13:31:17,757 - root - INFO - Visible months: ['May 2026', 'June 2026']
+2026-05-24 13:31:17,758 - root - INFO - Target month found: June 2026
+2026-05-24 13:31:17,758 - root - INFO - Clicking day: 26
+2026-05-24 13:31:17,802 - root - INFO - Date selected: June 2026 26
+2026-05-24 13:31:17,949 - root - INFO - Clicking search button
+2026-05-24 13:31:18,055 - root - INFO - Search clicked
+2026-05-24 13:31:19,574 - root - INFO - Applying left sidebar filter: '3A - AC 3 Tier Sleeper'...
+2026-05-24 13:31:20,240 - root - INFO - Verifying that visible train cards show option: 3A
+2026-05-24 13:31:20,298 - root - INFO - Card 1 verified: 3A
+2026-05-24 13:31:20,309 - root - INFO - Card 2 verified: 3A
+2026-05-24 13:31:20,318 - root - INFO - Card 3 verified: 3A
+2026-05-24 13:31:20,319 - root - INFO - SCENARIO STATUS: Status.passed
+2026-05-24 13:31:20,454 - root - INFO - Screenshot saved to reports/screenshots/PASSED_SCENARIO_Coach_class_filter_shows_matching_train_classes_--_@1.1__20260524-133120.png
+2026-05-24 13:31:20,459 - root - INFO - Successfully embedded 'PASSED_SCENARIO_Coach_class_filter_shows_matching_train_classes_--_@1.1_' into Allure timeline tracker.
